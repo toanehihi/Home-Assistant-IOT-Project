@@ -1,0 +1,203 @@
+# Cấu hình Home Assistant cơ bản
+homeassistant:
+  name: Smart Home
+  latitude: 10.8231  # Tọa độ TP.HCM
+  longitude: 106.6297
+  elevation: 19
+  unit_system: metric
+  time_zone: Asia/Ho_Chi_Minh
+  country: VN
+  currency: VND
+  
+  # Tùy chỉnh giao diện
+  customize:
+    sensor.living_room_temperature:
+      friendly_name: "Nhiệt độ phòng khách"
+      icon: mdi:thermometer
+    sensor.living_room_humidity:
+      friendly_name: "Độ ẩm phòng khách"
+      icon: mdi:water-percent
+    binary_sensor.living_room_motion:
+      friendly_name: "Cảm biến chuyển động"
+      icon: mdi:motion-sensor
+    switch.living_room_light:
+      friendly_name: "Đèn phòng khách"
+      icon: mdi:lightbulb
+
+# Kích hoạt frontend
+frontend:
+  themes: !include themes.yaml
+
+# Kích hoạt config flow UI
+config:
+
+# HTTP server
+http:
+  server_port: 8123
+  
+# History & Recorder
+recorder:
+  db_url: sqlite:////config/home-assistant_v2.db
+  purge_keep_days: 7
+  include:
+    entities:
+      - sensor.living_room_temperature
+      - sensor.living_room_humidity
+      - binary_sensor.living_room_motion
+      - switch.living_room_light
+
+history:
+  include:
+    entities:
+      - sensor.living_room_temperature
+      - sensor.living_room_humidity
+      - binary_sensor.living_room_motion
+      - switch.living_room_light
+
+# Logbook
+logbook:
+  include:
+    entities:
+      - sensor.living_room_temperature
+      - sensor.living_room_humidity
+      - binary_sensor.living_room_motion
+      - switch.living_room_light
+
+# System Health
+system_health:
+
+# Sun (để dùng condition sunset/sunrise)
+sun:
+
+# Mobile app
+mobile_app:
+
+# ============================================
+# MQTT BROKER CONFIGURATION
+# ============================================
+mqtt:
+  broker: localhost  # Hoặc core-mosquitto nếu dùng Add-on
+  port: 1883
+  # username: homeassistant  # Bỏ comment nếu đã setup auth
+  # password: !secret mqtt_password
+  discovery: true
+  birth_message:
+    topic: 'homeassistant/status'
+    payload: 'online'
+  will_message:
+    topic: 'homeassistant/status'
+    payload: 'offline'
+
+# ============================================
+# CẢM BIẾN NHIỆT ĐỘ/ĐỘ ẨM (DHT11)
+# ============================================
+sensor:
+  # Nhiệt độ
+  - platform: mqtt
+    name: "Living Room Temperature"
+    state_topic: "homeassistant/sensor/temperature/state"
+    unit_of_measurement: "°C"
+    device_class: temperature
+    value_template: "{{ value | round(1) }}"
+    icon: mdi:thermometer
+    
+  # Độ ẩm
+  - platform: mqtt
+    name: "Living Room Humidity"
+    state_topic: "homeassistant/sensor/humidity/state"
+    unit_of_measurement: "%"
+    device_class: humidity
+    value_template: "{{ value | round(0) }}"
+    icon: mdi:water-percent
+    
+  # Template sensor: Cảm giác nhiệt độ
+  - platform: template
+    sensors:
+      feels_like_temperature:
+        friendly_name: "Cảm giác nhiệt độ"
+        unit_of_measurement: "°C"
+        value_template: >
+          {% set temp = states('sensor.living_room_temperature') | float %}
+          {% set hum = states('sensor.living_room_humidity') | float %}
+          {% if temp > 27 and hum > 70 %}
+            {{ (temp + 2) | round(1) }}
+          {% elif temp < 20 %}
+            {{ (temp - 1) | round(1) }}
+          {% else %}
+            {{ temp | round(1) }}
+          {% endif %}
+        icon_template: mdi:temperature-celsius
+        
+  # Tính điểm chỉ số thoải mái (Comfort Index)
+  - platform: template
+    sensors:
+      comfort_index:
+        friendly_name: "Chỉ số thoải mái"
+        value_template: >
+          {% set temp = states('sensor.living_room_temperature') | float %}
+          {% set hum = states('sensor.living_room_humidity') | float %}
+          {% if temp >= 22 and temp <= 26 and hum >= 40 and hum <= 60 %}
+            Thoải mái
+          {% elif temp > 30 or hum > 70 %}
+            Nóng ẩm
+          {% elif temp < 18 %}
+            Lạnh
+          {% else %}
+            Bình thường
+          {% endif %}
+        icon_template: >
+          {% set temp = states('sensor.living_room_temperature') | float %}
+          {% if temp > 30 %}
+            mdi:emoticon-sad
+          {% elif temp >= 22 and temp <= 26 %}
+            mdi:emoticon-happy
+          {% else %}
+            mdi:emoticon-neutral
+          {% endif %}
+
+# ============================================
+# CẢM BIẾN CHUYỂN ĐỘNG (SR501)
+# ============================================
+binary_sensor:
+  - platform: mqtt
+    name: "Room Motion"
+    state_topic: "homeassistant/binary_sensor/motion/state"
+    payload_on: "ON"
+    payload_off: "OFF"
+    device_class: motion
+    off_delay: 5  # Tắt sau 5 giây không có chuyển động
+    icon: mdi:motion-sensor
+
+# ============================================
+# CÔNG TẮC ĐÈN LED (QUA RELAY 1)
+# ============================================
+switch:
+  # Đèn LED điều khiển qua Relay kênh 1
+  - platform: mqtt
+    name: "Living Room Light"
+    command_topic: "homeassistant/switch/led1/set"
+    state_topic: "homeassistant/switch/led1/state"
+    payload_on: "ON"
+    payload_off: "OFF"
+    state_on: "ON"
+    state_off: "OFF"
+    optimistic: false
+    qos: 1
+    retain: true
+    icon: mdi:lightbulb
+# ============================================
+# THÔNG BÁO
+# ============================================
+notify:
+  - platform: persistent_notification
+    name: system_notify
+
+# ============================================
+# AUTOMATION SCRIPTS
+# ============================================
+automation: !include automations.yaml
+
+# ============================================
+# SCRIPT ACTIONS
+# ============================================
+script: !include scripts.yaml
