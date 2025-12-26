@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "minor_version": 1,
+  "key": "person",
+  "data": {
+    "items": [
+      {
+        "id": "toanehihi",
+        "name": "toanehihi",
+        "user_id": "f94b59ddbd2942a28a86bf37842106ac",
+        "device_trackers": [
+          "device_tracker.ta_bo_chay"
+        ]
+      }
+    ]
+  }
+}

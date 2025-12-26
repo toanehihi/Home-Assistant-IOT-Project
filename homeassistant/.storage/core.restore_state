@@ -1,0 +1,131 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "core.restore_state",
+  "data": [
+    {
+      "state": {"entity_id":"conversation.home_assistant","state":"unknown","attributes":{"friendly_name":"Home Assistant","supported_features":1},"last_changed":"2025-12-26T15:09:33.938949+00:00","last_reported":"2025-12-26T15:09:33.938949+00:00","last_updated":"2025-12-26T15:09:33.938949+00:00","context":{"id":"01KDDKAEVJ4WRTZFD04VVCZN3R","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-12-26T16:09:35.510337+00:00"
+    },
+    {
+      "state": {"entity_id":"event.backup_automatic_backup","state":"unknown","attributes":{"event_types":["completed","failed","in_progress"],"event_type":null,"friendly_name":"Backup Automatic backup"},"last_changed":"2025-12-26T15:09:35.916255+00:00","last_reported":"2025-12-26T15:09:35.916559+00:00","last_updated":"2025-12-26T15:09:35.916255+00:00","context":{"id":"01KDDKAGSCBTNK8MENK6SX09M5","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "last_event_type": null,
+        "last_event_attributes": null
+      },
+      "last_seen": "2025-12-26T16:09:35.510337+00:00"
+    },
+    {
+      "state": {"entity_id":"person.toanehihi","state":"unknown","attributes":{"editable":true,"id":"toanehihi","device_trackers":["device_tracker.ta_bo_chay"],"user_id":"f94b59ddbd2942a28a86bf37842106ac","friendly_name":"toanehihi"},"last_changed":"2025-12-26T15:09:55.446511+00:00","last_reported":"2025-12-26T15:10:47.479410+00:00","last_updated":"2025-12-26T15:10:47.474891+00:00","context":{"id":"01KDDKCPNJJK13C3KNDEAKXN8X","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-12-26T16:09:35.510337+00:00"
+    },
+    {
+      "state": {"entity_id":"tts.google_translate_en_com","state":"unknown","attributes":{"friendly_name":"Google Translate en com"},"last_changed":"2025-12-26T15:10:20.698060+00:00","last_reported":"2025-12-26T15:10:20.698347+00:00","last_updated":"2025-12-26T15:10:20.698060+00:00","context":{"id":"01KDDKBWGTN7FJFZKYN73CHCRB","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-12-26T16:09:35.510337+00:00"
+    },
+    {
+      "state": {"entity_id":"device_tracker.ta_bo_chay","state":"unknown","attributes":{"source_type":"gps","friendly_name":"ta bo chay"},"last_changed":"2025-12-26T15:10:47.478615+00:00","last_reported":"2025-12-26T15:10:47.478615+00:00","last_updated":"2025-12-26T15:10:47.478615+00:00","context":{"id":"01KDDKCPNPMEPGP73R0CT4GPSW","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-12-26T16:09:35.510337+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.ta_bo_chay_sim_1","state":"unavailable","attributes":{"icon":"mdi:dots-square","friendly_name":"ta bo chay SIM 1"},"last_changed":"2025-12-26T15:10:47.670894+00:00","last_reported":"2025-12-26T15:24:16.029902+00:00","last_updated":"2025-12-26T15:10:47.670894+00:00","context":{"id":"01KDDKCPVP11D5W3EBB4T5X6R6","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "unavailable",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2025-12-26T16:09:35.510337+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.ta_bo_chay_bssid","state":"unavailable","attributes":{"icon":"mdi:dots-square","friendly_name":"ta bo chay BSSID"},"last_changed":"2025-12-26T15:10:50.263962+00:00","last_reported":"2025-12-26T15:24:16.029706+00:00","last_updated":"2025-12-26T15:10:50.263962+00:00","context":{"id":"01KDDKCSCQSYX932QE38RMWS2G","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "unavailable",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2025-12-26T16:09:35.510337+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.ta_bo_chay_storage","state":"unavailable","attributes":{"icon":"mdi:dots-square","friendly_name":"ta bo chay Storage"},"last_changed":"2025-12-26T15:10:47.682048+00:00","last_reported":"2025-12-26T15:24:16.029508+00:00","last_updated":"2025-12-26T15:10:47.682048+00:00","context":{"id":"01KDDKCPW2MB0SSHX7JGH0GQ92","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "unavailable",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2025-12-26T16:09:35.510337+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.ta_bo_chay_battery_state","state":"Not Charging","attributes":{"Low Power Mode":false,"icon":"mdi:battery-70","friendly_name":"ta bo chay Battery State"},"last_changed":"2025-12-26T15:10:47.683383+00:00","last_reported":"2025-12-26T15:24:16.029402+00:00","last_updated":"2025-12-26T15:10:47.683383+00:00","context":{"id":"01KDDKCPW38TPNX5GFK99P4DFR","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "Not Charging",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2025-12-26T16:09:35.510337+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.ta_bo_chay_battery_level","state":"71","attributes":{"unit_of_measurement":"%","device_class":"battery","icon":"mdi:battery-70","friendly_name":"ta bo chay Battery Level"},"last_changed":"2025-12-26T15:24:16.029035+00:00","last_reported":"2025-12-26T15:24:16.029035+00:00","last_updated":"2025-12-26T15:24:16.029035+00:00","context":{"id":"01KDDM5C8XW4DVGZ3ZJT6N4H75","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": 71,
+        "native_unit_of_measurement": "%"
+      },
+      "last_seen": "2025-12-26T16:09:35.510337+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.ta_bo_chay_ssid","state":"unavailable","attributes":{"icon":"mdi:dots-square","friendly_name":"ta bo chay SSID"},"last_changed":"2025-12-26T15:10:50.263763+00:00","last_reported":"2025-12-26T15:24:16.029587+00:00","last_updated":"2025-12-26T15:10:50.263763+00:00","context":{"id":"01KDDKCSCQMN2RJVX37ZQCVQD5","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "unavailable",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2025-12-26T16:09:35.510337+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.ta_bo_chay_geocoded_location","state":"Unknown","attributes":{"icon":"mdi:map","friendly_name":"ta bo chay Geocoded Location"},"last_changed":"2025-12-26T15:10:47.712477+00:00","last_reported":"2025-12-26T15:10:47.712680+00:00","last_updated":"2025-12-26T15:10:47.712477+00:00","context":{"id":"01KDDKCPX07BHP37S8TSB8WX7N","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "Unknown",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2025-12-26T16:09:35.510337+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.ta_bo_chay_last_update_trigger","state":"unavailable","attributes":{"icon":"mdi:dots-square","friendly_name":"ta bo chay Last Update Trigger"},"last_changed":"2025-12-26T15:10:47.715594+00:00","last_reported":"2025-12-26T15:24:16.029963+00:00","last_updated":"2025-12-26T15:10:47.715594+00:00","context":{"id":"01KDDKCPX3T971J26S8QYMTEBG","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "unavailable",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2025-12-26T16:09:35.510337+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.ta_bo_chay_location_permission","state":"Authorized when in use","attributes":{"icon":"mdi:map","friendly_name":"ta bo chay Location permission"},"last_changed":"2025-12-26T15:10:47.722471+00:00","last_reported":"2025-12-26T15:24:16.030118+00:00","last_updated":"2025-12-26T15:10:47.722471+00:00","context":{"id":"01KDDKCPXAA7ZDY7A7A6BENK6A","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "Authorized when in use",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2025-12-26T16:09:35.510337+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.ta_bo_chay_app_version","state":"2025.7.2","attributes":{"icon":"mdi:cellphone","friendly_name":"ta bo chay App Version"},"last_changed":"2025-12-26T15:10:47.724078+00:00","last_reported":"2025-12-26T15:24:16.030042+00:00","last_updated":"2025-12-26T15:10:47.724078+00:00","context":{"id":"01KDDKCPXC8XXA4M4DA41109YR","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "2025.7.2",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2025-12-26T16:09:35.510337+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.ta_bo_chay_audio_output","state":"unavailable","attributes":{"icon":"mdi:dots-square","friendly_name":"ta bo chay Audio Output"},"last_changed":"2025-12-26T15:10:47.728324+00:00","last_reported":"2025-12-26T15:24:16.030156+00:00","last_updated":"2025-12-26T15:10:47.728324+00:00","context":{"id":"01KDDKCPXGBEGB2562G3ZN0W2W","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "unavailable",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2025-12-26T16:09:35.510337+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.ta_bo_chay_connection_type","state":"unavailable","attributes":{"icon":"mdi:dots-square","friendly_name":"ta bo chay Connection Type"},"last_changed":"2025-12-26T15:10:49.757591+00:00","last_reported":"2025-12-26T15:24:16.029838+00:00","last_updated":"2025-12-26T15:10:49.757591+00:00","context":{"id":"01KDDKCRWXFF8DT3KM8KPQEBA8","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "unavailable",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2025-12-26T16:09:35.510337+00:00"
+    }
+  ]
+}

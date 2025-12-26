@@ -1,0 +1,5 @@
+2025-12-26 22:10:52.825 ERROR (MainThread) [frontend.js.legacy.202512033] Uncaught error from WebKit 605.1.15 on iOS 15.8.5
+Script error.
+null
+@:0:0
+2025-12-26 22:15:25.556 WARNING (MainThread) [homeassistant.helpers.translation] Failed to load integration for translation: Integration 'MQTT' not found.
