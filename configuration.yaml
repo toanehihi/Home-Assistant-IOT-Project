@@ -91,26 +91,13 @@ mqtt:
 # ============================================
 # CẢM BIẾN NHIỆT ĐỘ/ĐỘ ẨM (DHT11)
 # ============================================
+# MQTT Discovery được bật - ESP8266 sẽ tự động tạo entities
+# Không cần khai báo manual sensor ở đây nữa  
+# Entities sẽ tự động xuất hiện:
+#   - sensor.smart_home_esp8266_temperature
+#   - sensor.smart_home_esp8266_humidity
+
 sensor:
-  # Nhiệt độ
-  - platform: mqtt
-    name: "Living Room Temperature"
-    state_topic: "homeassistant/sensor/temperature/state"
-    unit_of_measurement: "°C"
-    device_class: temperature
-    value_template: "{{ value | round(1) }}"
-    icon: mdi:thermometer
-    
-  # Độ ẩm
-  - platform: mqtt
-    name: "Living Room Humidity"
-    state_topic: "homeassistant/sensor/humidity/state"
-    unit_of_measurement: "%"
-    device_class: humidity
-    value_template: "{{ value | round(0) }}"
-    icon: mdi:water-percent
-    
-  # Template sensor: Cảm giác nhiệt độ
   - platform: template
     sensors:
       feels_like_temperature:
@@ -158,33 +145,18 @@ sensor:
 # ============================================
 # CẢM BIẾN CHUYỂN ĐỘNG (SR501)
 # ============================================
-binary_sensor:
-  - platform: mqtt
-    name: "Room Motion"
-    state_topic: "homeassistant/binary_sensor/motion/state"
-    payload_on: "ON"
-    payload_off: "OFF"
-    device_class: motion
-    off_delay: 5  # Tắt sau 5 giây không có chuyển động
-    icon: mdi:motion-sensor
+# MQTT Discovery được bật - ESP8266 sẽ tự động tạo entities
+# Không cần khai báo manual binary_sensor ở đây nữa
+# Entity sẽ tự động xuất hiện: binary_sensor.smart_home_esp8266_motion
+binary_sensor: []
 
 # ============================================
 # CÔNG TẮC ĐÈN LED (QUA RELAY 1)
 # ============================================
-switch:
-  # Đèn LED điều khiển qua Relay kênh 1
-  - platform: mqtt
-    name: "Living Room Light"
-    command_topic: "homeassistant/switch/led1/set"
-    state_topic: "homeassistant/switch/led1/state"
-    payload_on: "ON"
-    payload_off: "OFF"
-    state_on: "ON"
-    state_off: "OFF"
-    optimistic: false
-    qos: 1
-    retain: true
-    icon: mdi:lightbulb
+# MQTT Discovery được bật - ESP8266 sẽ tự động tạo entities
+# Không cần khai báo manual switch ở đây nữa
+# Entity sẽ tự động xuất hiện: switch.smart_home_esp8266_led
+switch: []
 # ============================================
 # THÔNG BÁO
 # ============================================

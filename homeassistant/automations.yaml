@@ -1,1 +1,20 @@
-[]
+- id: '1767028620670'
+  alias: Báo cháy khi nhiệt độ > 30 trong 30s
+  description: ''
+  triggers:
+  - trigger: numeric_state
+    entity_id:
+    - sensor.smart_home_esp8266_temperature
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 2
+    above: 28.1
+  conditions: []
+  actions:
+  - action: switch.turn_on
+    metadata: {}
+    target:
+      entity_id: switch.smart_home_esp8266_buzzer
+    data: {}
+  mode: single

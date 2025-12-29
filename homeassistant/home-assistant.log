@@ -1,5 +1,5 @@
-2025-12-26 22:10:52.825 ERROR (MainThread) [frontend.js.legacy.202512033] Uncaught error from WebKit 605.1.15 on iOS 15.8.5
-Script error.
-null
-@:0:0
-2025-12-26 22:15:25.556 WARNING (MainThread) [homeassistant.helpers.translation] Failed to load integration for translation: Integration 'MQTT' not found.
+2025-12-29 23:43:00.067 WARNING (MainThread) [homeassistant.helpers.service] Referenced entities switch.smart_home_esp8266_led_light are missing or not currently available
+2025-12-29 23:43:25.373 WARNING (MainThread) [homeassistant.helpers.service] Referenced entities switch.smart_home_esp8266_buzzer, switch.smart_home_esp8266_led_light are missing or not currently available
+2025-12-30 00:01:39.163 WARNING (MainThread) [homeassistant.components.mqtt.client] Error returned from MQTT server: The connection was lost.
+2025-12-30 00:02:01.319 WARNING (MainThread) [homeassistant.components.mqtt.client] Error returned from MQTT server: The connection was lost.
+2025-12-30 00:16:22.206 WARNING (MainThread) [homeassistant.components.homeassistant.triggers.numeric_state] Error initializing 'websocket_api' trigger: In 'numeric_state' condition: template error: ValueError: Template error: float got invalid input 'unknown' when rendering template '{{ states('senesor.temperature') | float }}' but no default was specified

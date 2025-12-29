@@ -71,23 +71,6 @@
         "version": "2025.12.4"
       },
       {
-        "id": "4cbe9a7823fc4a3e9ce55c31497180fc",
-        "user_id": "f94b59ddbd2942a28a86bf37842106ac",
-        "client_id": "http://localhost:8123/",
-        "client_name": null,
-        "client_icon": null,
-        "token_type": "normal",
-        "created_at": "2025-12-26T15:10:32.773705+00:00",
-        "access_token_expiration": 1800.0,
-        "token": "25c1fd28a5cebf996f881888efd8e874099610f1a4e10ab089ff4219ad23f94c71bf914d377f1077a8d15ff62322323a3d9ab8bde76229669065267103cd96f0",
-        "jwt_key": "efe4b8e857badf4f399fedced4c4ec9efcc1e7a31e7ef88f0d1a066a7ca6ddd877b8c6d8fcc38066f6d81a67642e0d94c25275bd6e35129b6ea62eee904354ef",
-        "last_used_at": "2025-12-26T16:13:35.736826+00:00",
-        "last_used_ip": "172.18.0.1",
-        "expire_at": 1774541615.736826,
-        "credential_id": "50bcff01c6e54fee9a2115eed215d954",
-        "version": "2025.12.4"
-      },
-      {
         "id": "5d6cb1b010a24a308dda9a49cff55a30",
         "user_id": "f94b59ddbd2942a28a86bf37842106ac",
         "client_id": "https://home-assistant.io/iOS",
@@ -101,6 +84,23 @@
         "last_used_at": "2025-12-26T16:31:23.450731+00:00",
         "last_used_ip": "172.18.0.1",
         "expire_at": 1774542683.450731,
+        "credential_id": "50bcff01c6e54fee9a2115eed215d954",
+        "version": "2025.12.4"
+      },
+      {
+        "id": "58cef9de45f14af5acfa9cf2e8df8fbc",
+        "user_id": "f94b59ddbd2942a28a86bf37842106ac",
+        "client_id": "http://localhost:8123/",
+        "client_name": null,
+        "client_icon": null,
+        "token_type": "normal",
+        "created_at": "2025-12-29T16:34:35.960954+00:00",
+        "access_token_expiration": 1800.0,
+        "token": "749f08d9b8384764082f3ded13cb435c68d9fdc6885b9f9fc86fb0baedfb82e61a9fd9bca0437d18ab61fa17d7290823279cb6df30bdb1c1debbc01baa39a205",
+        "jwt_key": "394c9e588c73c92a6da4d664ed964b4266089828e6d85117fe4091ca7391a978d77dead81e61eb417e3cec6e5e1b80c8a8a6a4d6cdc11980c06adba944abc25a",
+        "last_used_at": "2025-12-29T18:43:36.845084+00:00",
+        "last_used_ip": "172.18.0.1",
+        "expire_at": 1774809816.845084,
         "credential_id": "50bcff01c6e54fee9a2115eed215d954",
         "version": "2025.12.4"
       }

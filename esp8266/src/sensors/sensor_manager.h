@@ -10,7 +10,7 @@ extern PubSubClient mqttClient;
 extern int motionState;
 extern int lastMotionState;
 extern unsigned long motionDetectedTime;
-extern bool ledAutoMode;
+// extern bool ledAutoMode;
 extern bool tempAlertActive;
 extern float lastTemperature;
 extern float lastHumidity;

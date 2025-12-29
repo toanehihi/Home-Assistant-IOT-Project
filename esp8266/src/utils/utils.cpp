@@ -7,7 +7,7 @@
 extern PubSubClient mqttClient;
 extern bool ledState;
 extern bool buzzerState;
-extern bool ledAutoMode;
+// extern bool ledAutoMode;
 extern int motionState;
 extern float lastTemperature;
 extern float lastHumidity;
@@ -21,7 +21,8 @@ void initializeGPIO() {
   pinMode(PIN_RELAY_BUZZER, OUTPUT);
   
   // Cấu hình chân input (Sensor)
-  pinMode(PIN_SR501_OUT, INPUT);
+  // Sử dụng INPUT_PULLUP để tránh floating pin khi SR501 bị rút dây
+  pinMode(PIN_SR501_OUT, INPUT_PULLUP);
   
   // Tắt tất cả relay ban đầu
   digitalWrite(PIN_RELAY_LED, RELAY_OFF);
@@ -62,7 +63,7 @@ void printSystemStatus() {
   Serial.println(mqttClient.connected() ? "✓ Connected" : "✗ Disconnected");
   Serial.print("LED:     ");
   Serial.print(ledState ? "ON" : "OFF");
-  Serial.print(ledAutoMode ? " (AUTO)" : " (MANUAL)");
+  // Serial.print(ledAutoMode ? " (AUTO)" : " (MANUAL)");
   Serial.println();
   Serial.print("Buzzer:  ");
   Serial.println(buzzerState ? "ON" : "OFF");

@@ -9,6 +9,10 @@ extern bool ledState;
 extern bool buzzerState;
 
 void turnOnLED() {
+  if (ledState == true) {
+    return;
+  }
+  
   digitalWrite(PIN_RELAY_LED, RELAY_ON);
   ledState = true;
   mqttClient.publish(MQTTTopics::LED_STATE, "ON", true);
@@ -16,6 +20,10 @@ void turnOnLED() {
 }
 
 void turnOffLED() {
+  if (ledState == false) {
+    return;
+  }
+  
   digitalWrite(PIN_RELAY_LED, RELAY_OFF);
   ledState = false;
   mqttClient.publish(MQTTTopics::LED_STATE, "OFF", true);
@@ -23,6 +31,10 @@ void turnOffLED() {
 }
 
 void turnOnBuzzer() {
+  if (buzzerState == true) {
+    return;
+  }
+  
   digitalWrite(PIN_RELAY_BUZZER, RELAY_ON);
   buzzerState = true;
   mqttClient.publish(MQTTTopics::BUZZER_STATE, "ON", true);
@@ -30,6 +42,10 @@ void turnOnBuzzer() {
 }
 
 void turnOffBuzzer() {
+  if (buzzerState == false) {
+    return;
+  }
+  
   digitalWrite(PIN_RELAY_BUZZER, RELAY_OFF);
   buzzerState = false;
   mqttClient.publish(MQTTTopics::BUZZER_STATE, "OFF", true);

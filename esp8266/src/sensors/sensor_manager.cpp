@@ -11,7 +11,6 @@ extern PubSubClient mqttClient;
 extern int motionState;
 extern int lastMotionState;
 extern unsigned long motionDetectedTime;
-extern bool ledAutoMode;
 extern bool tempAlertActive;
 extern float lastTemperature;
 extern float lastHumidity;
@@ -99,14 +98,6 @@ void readMotionSensor() {
     
     // Publish lên MQTT
     mqttClient.publish(MQTTTopics::MOTION_STATE, "ON", true);
-    
-    // Tự động bật đèn LED (chỉ khi ở chế độ AUTO)
-    if (ledAutoMode) {
-      turnOnLED();
-      motionDetectedTime = millis();
-      Serial.println("💡 LED turned ON automatically (motion detected)");
-    }
-    
     lastMotionState = HIGH;
   }
   
@@ -116,24 +107,4 @@ void readMotionSensor() {
     mqttClient.publish(MQTTTopics::MOTION_STATE, "OFF", true);
     lastMotionState = LOW;
   }
-  
-  // Xử lý tự động tắt đèn sau timeout
-  handleMotionAutoLED();
 }
-
-/**
- * Xử lý tự động tắt đèn sau khi hết chuyển động
- */
-void handleMotionAutoLED() {
-  extern bool ledState;
-  
-  if (ledAutoMode && ledState && motionState == LOW) {
-    unsigned long elapsed = millis() - motionDetectedTime;
-    
-    if (elapsed > MOTION_LED_TIMEOUT) {
-      turnOffLED();
-      Serial.println("💡 LED turned OFF automatically (timeout)");
-    }
-  }
-}
-

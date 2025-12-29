@@ -4,7 +4,7 @@
 #include "../actuators/actuator_manager.h"
 
 // External variables
-extern bool ledAutoMode;
+// extern bool ledAutoMode;
 
 /**
  * Cấu hình MQTT client
@@ -253,16 +253,10 @@ void handleLEDControl(String message) {
   
   if (message == "ON") {
     turnOnLED();
-    ledAutoMode = false;  // Tắt chế độ tự động khi điều khiển thủ công
   } 
   else if (message == "OFF") {
     turnOffLED();
-    ledAutoMode = false;
   } 
-  else if (message == "AUTO") {
-    ledAutoMode = true;
-    Serial.println("✓ LED switched to AUTO mode");
-  }
 }
 
 /**

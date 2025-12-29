@@ -34,7 +34,7 @@ unsigned long motionDetectedTime = 0;
 // Device States
 bool ledState = false;
 bool buzzerState = false;
-bool ledAutoMode = true;        // Chế độ tự động bật đèn khi có chuyển động
+// bool ledAutoMode = true;        // Chế độ tự động bật đèn khi có chuyển động
 bool tempAlertActive = false;   // Cảnh báo nhiệt độ đang hoạt động
 
 // Sensor Values
@@ -80,8 +80,8 @@ void setup() {
   Serial.println("✓ Setup completed successfully!");
   Serial.println();
   
-  // Test relay
-  testRelays();
+  // Test relay - Disabled để tránh nhiễu nguồn khi SR501 active
+  // testRelays();
   Serial.println();
 }
 
