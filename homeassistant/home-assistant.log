@@ -1,5 +1,20 @@
-2026-01-04 15:34:17.245 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for camera-an-ninh @ 192.168.20.41: Error connecting to [AddrInfo(family=<AddressFamily.AF_INET: 2>, type=<SocketKind.SOCK_STREAM: 1>, proto=6, sockaddr=IPv4Sockaddr(address='192.168.20.41', port=6053))]: [Errno 111] Connect call failed ('192.168.20.41', 6053) (SocketAPIError)
-2026-01-04 15:37:41.438 WARNING (MainThread) [homeassistant.components.automation.tat_bao_chay_khi_nd_da_an_toan] Tắt báo động khi NĐ/ĐA an toàn: Already running
-2026-01-04 15:43:41.811 WARNING (MainThread) [homeassistant.components.automation.chup_anh_khi_coi_keu] Chụp ảnh khi có tín hiệu cháy: Already running
-2026-01-04 15:45:29.974 WARNING (MainThread) [homeassistant.components.automation.chup_anh_khi_coi_keu] Chụp ảnh khi có tín hiệu cháy: Already running
-2026-01-04 15:51:31.521 WARNING (MainThread) [homeassistant.components.mqtt.client] Error returned from MQTT server: The connection was lost.
+2026-01-04 21:21:17.696 ERROR (MainThread) [homeassistant.components.mqtt.client] Failed to connect to MQTT server due to exception: timed out
+2026-01-04 21:21:33.486 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for camera-an-ninh @ 192.168.20.41: Error connecting to [AddrInfo(family=<AddressFamily.AF_INET: 2>, type=<SocketKind.SOCK_STREAM: 1>, proto=6, sockaddr=IPv4Sockaddr(address='192.168.20.41', port=6053))]: [Errno 111] Connect call failed ('192.168.20.41', 6053) (SocketAPIError)
+2026-01-04 21:21:37.153 WARNING (Thread-3 (_do_shutdown)) [homeassistant.util.executor] Thread[SyncWorker_4] is still running at shutdown: File "/usr/local/lib/python3.13/threading.py", line 1014, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/local/lib/python3.13/threading.py", line 1043, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.13/threading.py", line 994, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.13/concurrent/futures/thread.py", line 93, in _worker
+    work_item.run()
+  File "/usr/local/lib/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.13/site-packages/paho/mqtt/client.py", line 1598, in reconnect
+    self._sock = self._create_socket()
+  File "/usr/local/lib/python3.13/site-packages/paho/mqtt/client.py", line 4609, in _create_socket
+    sock = self._create_socket_connection()
+  File "/usr/local/lib/python3.13/site-packages/paho/mqtt/client.py", line 4640, in _create_socket_connection
+    return socket.create_connection(addr, timeout=self._connect_timeout, source_address=source)
+  File "/usr/local/lib/python3.13/socket.py", line 849, in create_connection
+    sock.connect(sa)
