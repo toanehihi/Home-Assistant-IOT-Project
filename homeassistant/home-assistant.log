@@ -1,5 +1,5 @@
-2025-12-29 23:43:00.067 WARNING (MainThread) [homeassistant.helpers.service] Referenced entities switch.smart_home_esp8266_led_light are missing or not currently available
-2025-12-29 23:43:25.373 WARNING (MainThread) [homeassistant.helpers.service] Referenced entities switch.smart_home_esp8266_buzzer, switch.smart_home_esp8266_led_light are missing or not currently available
-2025-12-30 00:01:39.163 WARNING (MainThread) [homeassistant.components.mqtt.client] Error returned from MQTT server: The connection was lost.
-2025-12-30 00:02:01.319 WARNING (MainThread) [homeassistant.components.mqtt.client] Error returned from MQTT server: The connection was lost.
-2025-12-30 00:16:22.206 WARNING (MainThread) [homeassistant.components.homeassistant.triggers.numeric_state] Error initializing 'websocket_api' trigger: In 'numeric_state' condition: template error: ValueError: Template error: float got invalid input 'unknown' when rendering template '{{ states('senesor.temperature') | float }}' but no default was specified
+2026-01-04 15:34:17.245 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for camera-an-ninh @ 192.168.20.41: Error connecting to [AddrInfo(family=<AddressFamily.AF_INET: 2>, type=<SocketKind.SOCK_STREAM: 1>, proto=6, sockaddr=IPv4Sockaddr(address='192.168.20.41', port=6053))]: [Errno 111] Connect call failed ('192.168.20.41', 6053) (SocketAPIError)
+2026-01-04 15:37:41.438 WARNING (MainThread) [homeassistant.components.automation.tat_bao_chay_khi_nd_da_an_toan] Tắt báo động khi NĐ/ĐA an toàn: Already running
+2026-01-04 15:43:41.811 WARNING (MainThread) [homeassistant.components.automation.chup_anh_khi_coi_keu] Chụp ảnh khi có tín hiệu cháy: Already running
+2026-01-04 15:45:29.974 WARNING (MainThread) [homeassistant.components.automation.chup_anh_khi_coi_keu] Chụp ảnh khi có tín hiệu cháy: Already running
+2026-01-04 15:51:31.521 WARNING (MainThread) [homeassistant.components.mqtt.client] Error returned from MQTT server: The connection was lost.

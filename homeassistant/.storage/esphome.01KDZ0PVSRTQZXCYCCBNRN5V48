@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "esphome.01KDZ0PVSRTQZXCYCCBNRN5V48",
+  "data": {
+    "device_info": {
+      "uses_password": false,
+      "name": "camera-an-ninh",
+      "friendly_name": "Camera An Ninh",
+      "mac_address": "80:F3:DA:5E:92:EC",
+      "compilation_time": "Jan  2 2026, 10:02:52",
+      "model": "esp32dev",
+      "manufacturer": "Espressif",
+      "has_deep_sleep": false,
+      "esphome_version": "2025.12.4",
+      "project_name": "",
+      "project_version": "",
+      "webserver_port": 80,
+      "legacy_voice_assistant_version": 0,
+      "voice_assistant_feature_flags": 0,
+      "legacy_bluetooth_proxy_version": 0,
+      "bluetooth_proxy_feature_flags": 0,
+      "zwave_proxy_feature_flags": 0,
+      "zwave_home_id": 0,
+      "suggested_area": "",
+      "bluetooth_mac_address": "",
+      "api_encryption_supported": false,
+      "devices": [],
+      "areas": [],
+      "area": {
+        "area_id": 0,
+        "name": ""
+      }
+    },
+    "services": [],
+    "api_version": {
+      "major": 1,
+      "minor": 13
+    },
+    "camera": [
+      {
+        "object_id": "camera_feed",
+        "key": 3353424847,
+        "name": "Camera Feed",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "device_id": 0
+      }
+    ],
+    "light": [
+      {
+        "object_id": "__n_flash_camera",
+        "key": 1478616266,
+        "name": "Đèn Flash Camera",
+        "disabled_by_default": false,
+        "icon": "",
+        "entity_category": 0,
+        "device_id": 0,
+        "supported_color_modes": [
+          1
+        ],
+        "min_mireds": 0.0,
+        "max_mireds": 0.0,
+        "effects": [],
+        "legacy_supports_brightness": false,
+        "legacy_supports_rgb": false,
+        "legacy_supports_white_value": false,
+        "legacy_supports_color_temperature": false
+      }
+    ]
+  }
+}

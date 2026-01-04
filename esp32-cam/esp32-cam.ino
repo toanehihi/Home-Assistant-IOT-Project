@@ -5,8 +5,8 @@
 #include "esp_system.h"
 
 // WiFi credentials - QUAN TRỌNG: Phải thay đổi thông tin WiFi của bạn!
-const char* ssid = "J19";     // VÍ DỤ: "MyHomeWiFi"
-const char* password = "hoangchimbe";  // VÍ DỤ: "mypassword123"
+const char* ssid = "K**A";     // VÍ DỤ: "MyHomeWiFi"
+const char* password = "tumotdenchin";  // VÍ DỤ: "mypassword123"
 
 // Camera model AI Thinker ESP32-CAM
 #define PWDN_GPIO_NUM     32

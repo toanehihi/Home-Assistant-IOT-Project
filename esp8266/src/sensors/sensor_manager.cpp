@@ -56,34 +56,35 @@ void readDHT11Sensor() {
  * Xử lý cảnh báo nhiệt độ cao
  */
 void handleTemperatureAlert(float temperature) {
-  if (temperature > TEMP_THRESHOLD_HIGH) {
-    if (!tempAlertActive) {
-      Serial.println("⚠️  HIGH TEMPERATURE ALERT!");
-      Serial.print("  Current: ");
-      Serial.print(temperature);
-      Serial.print("°C | Threshold: ");
-      Serial.print(TEMP_THRESHOLD_HIGH);
-      Serial.println("°C");
+  // if (temperature > TEMP_THRESHOLD_HIGH) {
+  //   if (!tempAlertActive) {
+  //     Serial.println("⚠️  HIGH TEMPERATURE ALERT!");
+  //     Serial.print("  Current: ");
+  //     Serial.print(temperature);
+  //     Serial.print("°C | Threshold: ");
+  //     Serial.print(TEMP_THRESHOLD_HIGH);
+  //     Serial.println("°C");
       
-      // Bật buzzer cảnh báo
-      turnOnBuzzer();
+  //     // Bật buzzer cảnh báo
+  //     turnOnBuzzer();
       
-      // Publish cảnh báo
-      String alertMsg = "High temperature: " + String(temperature) + "°C";
-      mqttClient.publish(MQTTTopics::TEMP_ALERT, alertMsg.c_str());
+  //     // Publish cảnh báo
+  //     String alertMsg = "High temperature: " + String(temperature) + "°C";
+  //     mqttClient.publish(MQTTTopics::TEMP_ALERT, alertMsg.c_str());
       
-      tempAlertActive = true;
-    }
-  } 
-  else {
-    // Tắt cảnh báo khi nhiệt độ trở lại bình thường
-    if (tempAlertActive) {
-      Serial.println("✓ Temperature back to normal");
-      turnOffBuzzer();
-      tempAlertActive = false;
-      mqttClient.publish(MQTTTopics::TEMP_ALERT, "Normal");
-    }
-  }
+  //     tempAlertActive = true;
+  //   }
+  // } 
+  // else {
+  //   // Tắt cảnh báo khi nhiệt độ trở lại bình thường
+  //   if (tempAlertActive) {
+  //     Serial.println("✓ Temperature back to normal");
+  //     turnOffBuzzer();
+  //     tempAlertActive = false;
+  //     mqttClient.publish(MQTTTopics::TEMP_ALERT, "Normal");
+  //   }
+  // }
+  return;
 }
 
 /**

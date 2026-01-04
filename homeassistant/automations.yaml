@@ -1,5 +1,5 @@
 - id: '1767028620670'
-  alias: Báo cháy khi nhiệt độ > 30 trong 30s
+  alias: Bật báo động khi NĐ/ĐA vượt ngưỡng
   description: ''
   triggers:
   - trigger: numeric_state
@@ -9,7 +9,15 @@
       hours: 0
       minutes: 0
       seconds: 2
-    above: 28.1
+    above: 45
+  - trigger: numeric_state
+    entity_id:
+    - sensor.smart_home_esp8266_humidity
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 2
+    above: 80
   conditions: []
   actions:
   - action: switch.turn_on
@@ -17,4 +25,129 @@
     target:
       entity_id: switch.smart_home_esp8266_buzzer
     data: {}
+  mode: single
+- id: '1767174274237'
+  alias: Bật/ tắt đèn khi phát hiện chuyển động
+  description: ''
+  triggers:
+  - type: motion
+    device_id: a169fa3454dca77467c7a1828beb8e50
+    entity_id: a2dd3c8fef6893695289092c5d1c44c9
+    domain: binary_sensor
+    trigger: device
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 2
+  conditions: []
+  actions:
+  - type: turn_on
+    device_id: a169fa3454dca77467c7a1828beb8e50
+    entity_id: f2fdd7ab3ba0e23a2fce2a75a580f9b4
+    domain: switch
+  - wait_for_trigger:
+    - type: no_motion
+      device_id: a169fa3454dca77467c7a1828beb8e50
+      entity_id: a2dd3c8fef6893695289092c5d1c44c9
+      domain: binary_sensor
+      trigger: device
+      for:
+        hours: 0
+        minutes: 0
+        seconds: 20
+  - type: turn_off
+    device_id: a169fa3454dca77467c7a1828beb8e50
+    entity_id: f2fdd7ab3ba0e23a2fce2a75a580f9b4
+    domain: switch
+  mode: restart
+- id: '1767350518824'
+  alias: Chụp ảnh khi phát hiện chuyển động
+  description: ''
+  triggers:
+  - type: motion
+    device_id: a169fa3454dca77467c7a1828beb8e50
+    entity_id: a2dd3c8fef6893695289092c5d1c44c9
+    domain: binary_sensor
+    trigger: device
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 2
+  conditions: []
+  actions:
+  - action: camera.snapshot
+    metadata: {}
+    data:
+      filename: /media/local/detect_human/snapshot_trom_{{ now().strftime('%Y%m%d-%H%M%S')
+        }}.jpg
+    target:
+      entity_id: camera.camera_an_ninh_camera_feed
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 20
+      milliseconds: 0
+  mode: single
+- id: '1767352073231'
+  alias: Tắt báo động khi NĐ/ĐA an toàn
+  description: ''
+  triggers:
+  - trigger: numeric_state
+    entity_id:
+    - sensor.smart_home_esp8266_temperature
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 2
+    below: 44
+  - trigger: numeric_state
+    entity_id:
+    - sensor.smart_home_esp8266_humidity
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 2
+    below: 79
+  conditions: []
+  actions:
+  - action: switch.turn_off
+    metadata: {}
+    target:
+      entity_id: switch.smart_home_esp8266_buzzer
+    data: {}
+  mode: single
+- id: '1767352345317'
+  alias: Chụp ảnh khi có tín hiệu cháy
+  description: ''
+  triggers:
+  - trigger: numeric_state
+    entity_id:
+    - sensor.smart_home_esp8266_temperature
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 2
+    above: 28
+  - trigger: numeric_state
+    entity_id:
+    - sensor.smart_home_esp8266_humidity
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 2
+    above: 80
+  conditions: []
+  actions:
+  - action: camera.snapshot
+    metadata: {}
+    target:
+      entity_id: camera.camera_an_ninh_camera_feed
+    data:
+      filename: /media/local/chay/snapshot_chay_{{ now().strftime('%Y%m%d-%H%M%S')
+        }}.jpg
+  - delay:
+      hours: 0
+      minutes: 3
+      seconds: 0
+      milliseconds: 0
   mode: single

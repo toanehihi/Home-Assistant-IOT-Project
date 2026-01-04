@@ -1,0 +1,60 @@
+esphome:
+  name: camera-an-ninh
+  friendly_name: Camera An Ninh
+
+esp32:
+  board: esp32dev
+  framework:
+    type: arduino
+
+psram:
+
+# Bật chức năng Camera
+esp32_camera:
+  external_clock:
+    pin: GPIO0
+    frequency: 20MHz
+  i2c_pins:
+    sda: GPIO26
+    scl: GPIO27
+  data_pins: [GPIO5, GPIO18, GPIO19, GPIO21, GPIO36, GPIO39, GPIO34, GPIO35]
+  vsync_pin: GPIO25
+  href_pin: GPIO23
+  pixel_clock_pin: GPIO22
+  power_down_pin: GPIO32
+  
+  # Cấu hình hình ảnh
+  name: Camera Feed
+  resolution: 320x240  # Độ phân giải
+  jpeg_quality: 15     # Chất lượng ảnh
+  max_framerate: 10 fps
+
+# Cấu hình đèn Flash (đèn LED nhỏ trên camera)
+output:
+  - platform: gpio
+    pin: GPIO4
+    id: gpio_flash
+    inverted: True
+
+light:
+  - platform: binary
+    output: gpio_flash
+    name: "Đèn Flash Camera"
+
+# Cấu hình mạng WiFi
+wifi:
+  ssid: "K**A"
+  password: "tumotdenchin"
+  # Dòng này giúp kết nối ổn định hơn nếu WiFi yếu
+  power_save_mode: none 
+
+# Bật tính năng Web Server để xem log nếu cần
+web_server:
+  port: 80
+
+# Bật API để Home Assistant tự tìm thấy
+api:
+
+ota:
+  - platform: esphome
+    password: "123456" # Mật khẩu nạp code không dây qua WiFi

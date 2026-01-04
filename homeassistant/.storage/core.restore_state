@@ -4,164 +4,213 @@
   "key": "core.restore_state",
   "data": [
     {
-      "state": {"entity_id":"conversation.home_assistant","state":"unknown","attributes":{"friendly_name":"Home Assistant","supported_features":1},"last_changed":"2025-12-29T16:41:54.822089+00:00","last_reported":"2025-12-29T16:41:54.822089+00:00","last_updated":"2025-12-29T16:41:54.822089+00:00","context":{"id":"01KDNFSPW6QN2SRVQK9YJYZHG2","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"conversation.home_assistant","state":"unknown","attributes":{"friendly_name":"Home Assistant","supported_features":1},"last_changed":"2026-01-04T08:33:54.829991+00:00","last_reported":"2026-01-04T08:33:54.829991+00:00","last_updated":"2026-01-04T08:33:54.829991+00:00","context":{"id":"01KE428F4D0944XYT05DZ4W677","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-12-29T18:41:55.718383+00:00"
+      "last_seen": "2026-01-04T08:51:31.463223+00:00"
     },
     {
-      "state": {"entity_id":"event.backup_automatic_backup","state":"unknown","attributes":{"event_types":["completed","failed","in_progress"],"event_type":null,"friendly_name":"Backup Automatic backup"},"last_changed":"2025-12-29T16:41:54.874062+00:00","last_reported":"2025-12-29T16:41:54.874062+00:00","last_updated":"2025-12-29T16:41:54.874062+00:00","context":{"id":"01KDNFSPXTBFK8BTPNFC9TTCJ0","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"event.backup_automatic_backup","state":"unknown","attributes":{"event_types":["completed","failed","in_progress"],"event_type":null,"friendly_name":"Backup Automatic backup"},"last_changed":"2026-01-04T08:33:54.888876+00:00","last_reported":"2026-01-04T08:33:54.888876+00:00","last_updated":"2026-01-04T08:33:54.888876+00:00","context":{"id":"01KE428F68J3H63R608DFEBSD4","parent_id":null,"user_id":null}},
       "extra_data": {
         "last_event_type": null,
         "last_event_attributes": null
       },
-      "last_seen": "2025-12-29T18:41:55.718383+00:00"
+      "last_seen": "2026-01-04T08:51:31.463223+00:00"
     },
     {
-      "state": {"entity_id":"person.toanehihi","state":"unknown","attributes":{"editable":true,"id":"toanehihi","device_trackers":["device_tracker.ta_bo_chay"],"user_id":"f94b59ddbd2942a28a86bf37842106ac","friendly_name":"toanehihi"},"last_changed":"2025-12-29T16:41:55.030762+00:00","last_reported":"2025-12-29T16:41:56.220262+00:00","last_updated":"2025-12-29T16:41:56.220262+00:00","context":{"id":"01KDNFSR7WXP11J7M5BEGKR279","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"person.toanehihi","state":"unknown","attributes":{"editable":true,"id":"toanehihi","device_trackers":["device_tracker.ta_bo_chay","device_tracker.realme_gt_neo5_se"],"user_id":"f94b59ddbd2942a28a86bf37842106ac","friendly_name":"toanehihi"},"last_changed":"2026-01-04T08:33:55.221906+00:00","last_reported":"2026-01-04T08:33:57.420398+00:00","last_updated":"2026-01-04T08:33:57.420398+00:00","context":{"id":"01KE428HNC5WPJZ73BHFZM0EME","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-12-29T18:41:55.718383+00:00"
+      "last_seen": "2026-01-04T08:51:31.463223+00:00"
     },
     {
-      "state": {"entity_id":"tts.google_translate_en_com","state":"unknown","attributes":{"friendly_name":"Google Translate en com"},"last_changed":"2025-12-29T16:41:55.276792+00:00","last_reported":"2025-12-29T16:41:55.276792+00:00","last_updated":"2025-12-29T16:41:55.276792+00:00","context":{"id":"01KDNFSQACZNRJ4PCVHVE0X9DR","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"device_tracker.ta_bo_chay","state":"unknown","attributes":{"source_type":"gps","friendly_name":"ta bo chay"},"last_changed":"2026-01-04T08:33:55.708072+00:00","last_reported":"2026-01-04T08:33:55.708072+00:00","last_updated":"2026-01-04T08:33:55.708072+00:00","context":{"id":"01KE428FZW6KC9W4SJ9R8JVVY9","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-12-29T18:41:55.718383+00:00"
+      "last_seen": "2026-01-04T08:51:31.463223+00:00"
     },
     {
-      "state": {"entity_id":"device_tracker.ta_bo_chay","state":"unknown","attributes":{"source_type":"gps","friendly_name":"ta bo chay"},"last_changed":"2025-12-29T16:41:55.339945+00:00","last_reported":"2025-12-29T16:41:55.339945+00:00","last_updated":"2025-12-29T16:41:55.339945+00:00","context":{"id":"01KDNFSQCBQVMMKRBAK30W20MX","parent_id":null,"user_id":null}},
-      "extra_data": null,
-      "last_seen": "2025-12-29T18:41:55.718383+00:00"
-    },
-    {
-      "state": {"entity_id":"sensor.ta_bo_chay_sim_1","state":"unavailable","attributes":{"icon":"mdi:dots-square","friendly_name":"ta bo chay SIM 1"},"last_changed":"2025-12-29T16:41:55.340347+00:00","last_reported":"2025-12-29T16:41:55.340347+00:00","last_updated":"2025-12-29T16:41:55.340347+00:00","context":{"id":"01KDNFSQCCQN1NJ50XXZ1F9RYR","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.ta_bo_chay_sim_1","state":"unavailable","attributes":{"icon":"mdi:dots-square","friendly_name":"ta bo chay SIM 1"},"last_changed":"2026-01-04T08:33:55.708552+00:00","last_reported":"2026-01-04T08:33:55.708552+00:00","last_updated":"2026-01-04T08:33:55.708552+00:00","context":{"id":"01KE428FZWV4YV58VB384A9M2W","parent_id":null,"user_id":null}},
       "extra_data": {
         "native_value": "unavailable",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2025-12-29T18:41:55.718383+00:00"
+      "last_seen": "2026-01-04T08:51:31.463223+00:00"
     },
     {
-      "state": {"entity_id":"sensor.ta_bo_chay_bssid","state":"unavailable","attributes":{"icon":"mdi:dots-square","friendly_name":"ta bo chay BSSID"},"last_changed":"2025-12-29T16:41:55.340445+00:00","last_reported":"2025-12-29T16:41:55.340445+00:00","last_updated":"2025-12-29T16:41:55.340445+00:00","context":{"id":"01KDNFSQCC1QHY2WBQNHSXDVW3","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.ta_bo_chay_bssid","state":"unavailable","attributes":{"icon":"mdi:dots-square","friendly_name":"ta bo chay BSSID"},"last_changed":"2026-01-04T08:33:55.708694+00:00","last_reported":"2026-01-04T08:33:55.708694+00:00","last_updated":"2026-01-04T08:33:55.708694+00:00","context":{"id":"01KE428FZWNZEB9BVRZQHH70FP","parent_id":null,"user_id":null}},
       "extra_data": {
         "native_value": "unavailable",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2025-12-29T18:41:55.718383+00:00"
+      "last_seen": "2026-01-04T08:51:31.463223+00:00"
     },
     {
-      "state": {"entity_id":"sensor.ta_bo_chay_storage","state":"unavailable","attributes":{"icon":"mdi:dots-square","friendly_name":"ta bo chay Storage"},"last_changed":"2025-12-29T16:41:55.340527+00:00","last_reported":"2025-12-29T16:41:55.340527+00:00","last_updated":"2025-12-29T16:41:55.340527+00:00","context":{"id":"01KDNFSQCC9KHWCR7T55G2DF7G","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.ta_bo_chay_storage","state":"unavailable","attributes":{"icon":"mdi:dots-square","friendly_name":"ta bo chay Storage"},"last_changed":"2026-01-04T08:33:55.708807+00:00","last_reported":"2026-01-04T08:33:55.708807+00:00","last_updated":"2026-01-04T08:33:55.708807+00:00","context":{"id":"01KE428FZWPCCBP0VS9WG0H0Q5","parent_id":null,"user_id":null}},
       "extra_data": {
         "native_value": "unavailable",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2025-12-29T18:41:55.718383+00:00"
+      "last_seen": "2026-01-04T08:51:31.463223+00:00"
     },
     {
-      "state": {"entity_id":"sensor.ta_bo_chay_battery_state","state":"Charging","attributes":{"Low Power Mode":false,"icon":"mdi:battery-charging-60","friendly_name":"ta bo chay Battery State"},"last_changed":"2025-12-29T16:41:55.340625+00:00","last_reported":"2025-12-29T16:41:55.340625+00:00","last_updated":"2025-12-29T16:41:55.340625+00:00","context":{"id":"01KDNFSQCCV2X1HP03BYHTC209","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.ta_bo_chay_battery_state","state":"Charging","attributes":{"Low Power Mode":false,"icon":"mdi:battery-charging-60","friendly_name":"ta bo chay Battery State"},"last_changed":"2026-01-04T08:33:55.708945+00:00","last_reported":"2026-01-04T08:33:55.708945+00:00","last_updated":"2026-01-04T08:33:55.708945+00:00","context":{"id":"01KE428FZWHRA0G99VV40AAN91","parent_id":null,"user_id":null}},
       "extra_data": {
         "native_value": "Charging",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2025-12-29T18:41:55.718383+00:00"
+      "last_seen": "2026-01-04T08:51:31.463223+00:00"
     },
     {
-      "state": {"entity_id":"sensor.ta_bo_chay_battery_level","state":"66","attributes":{"unit_of_measurement":"%","device_class":"battery","icon":"mdi:battery-charging-60","friendly_name":"ta bo chay Battery Level"},"last_changed":"2025-12-29T16:41:55.340728+00:00","last_reported":"2025-12-29T16:41:55.340728+00:00","last_updated":"2025-12-29T16:41:55.340728+00:00","context":{"id":"01KDNFSQCCJMHE529HMTCRGSNX","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.ta_bo_chay_battery_level","state":"66","attributes":{"unit_of_measurement":"%","device_class":"battery","icon":"mdi:battery-charging-60","friendly_name":"ta bo chay Battery Level"},"last_changed":"2026-01-04T08:33:55.714174+00:00","last_reported":"2026-01-04T08:33:55.714174+00:00","last_updated":"2026-01-04T08:33:55.714174+00:00","context":{"id":"01KE428G0275K8ZCBDHDBC3GXV","parent_id":null,"user_id":null}},
       "extra_data": {
         "native_value": 66,
         "native_unit_of_measurement": "%"
       },
-      "last_seen": "2025-12-29T18:41:55.718383+00:00"
+      "last_seen": "2026-01-04T08:51:31.463223+00:00"
     },
     {
-      "state": {"entity_id":"sensor.ta_bo_chay_ssid","state":"unavailable","attributes":{"icon":"mdi:dots-square","friendly_name":"ta bo chay SSID"},"last_changed":"2025-12-29T16:41:55.340801+00:00","last_reported":"2025-12-29T16:41:55.340801+00:00","last_updated":"2025-12-29T16:41:55.340801+00:00","context":{"id":"01KDNFSQCCV7BN7Q65TVBSK12S","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.ta_bo_chay_ssid","state":"unavailable","attributes":{"icon":"mdi:dots-square","friendly_name":"ta bo chay SSID"},"last_changed":"2026-01-04T08:33:55.714392+00:00","last_reported":"2026-01-04T08:33:55.714392+00:00","last_updated":"2026-01-04T08:33:55.714392+00:00","context":{"id":"01KE428G029Y9C1507A7EFF07K","parent_id":null,"user_id":null}},
       "extra_data": {
         "native_value": "unavailable",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2025-12-29T18:41:55.718383+00:00"
+      "last_seen": "2026-01-04T08:51:31.463223+00:00"
     },
     {
-      "state": {"entity_id":"sensor.ta_bo_chay_geocoded_location","state":"Unknown","attributes":{"icon":"mdi:map","friendly_name":"ta bo chay Geocoded Location"},"last_changed":"2025-12-29T16:41:55.340871+00:00","last_reported":"2025-12-29T16:41:55.340871+00:00","last_updated":"2025-12-29T16:41:55.340871+00:00","context":{"id":"01KDNFSQCCDEM3F7MQA0Z9Q2DH","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.ta_bo_chay_geocoded_location","state":"Unknown","attributes":{"icon":"mdi:map","friendly_name":"ta bo chay Geocoded Location"},"last_changed":"2026-01-04T08:33:55.714538+00:00","last_reported":"2026-01-04T08:33:55.714538+00:00","last_updated":"2026-01-04T08:33:55.714538+00:00","context":{"id":"01KE428G022NSCC1ZCPR65NN0F","parent_id":null,"user_id":null}},
       "extra_data": {
         "native_value": "Unknown",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2025-12-29T18:41:55.718383+00:00"
+      "last_seen": "2026-01-04T08:51:31.463223+00:00"
     },
     {
-      "state": {"entity_id":"sensor.ta_bo_chay_last_update_trigger","state":"unavailable","attributes":{"icon":"mdi:dots-square","friendly_name":"ta bo chay Last Update Trigger"},"last_changed":"2025-12-29T16:41:55.340937+00:00","last_reported":"2025-12-29T16:41:55.340937+00:00","last_updated":"2025-12-29T16:41:55.340937+00:00","context":{"id":"01KDNFSQCC0Q772A71HQ61MA0D","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.ta_bo_chay_last_update_trigger","state":"unavailable","attributes":{"icon":"mdi:dots-square","friendly_name":"ta bo chay Last Update Trigger"},"last_changed":"2026-01-04T08:33:55.714691+00:00","last_reported":"2026-01-04T08:33:55.714691+00:00","last_updated":"2026-01-04T08:33:55.714691+00:00","context":{"id":"01KE428G02RJ8KHGC9492DSN56","parent_id":null,"user_id":null}},
       "extra_data": {
         "native_value": "unavailable",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2025-12-29T18:41:55.718383+00:00"
+      "last_seen": "2026-01-04T08:51:31.463223+00:00"
     },
     {
-      "state": {"entity_id":"sensor.ta_bo_chay_location_permission","state":"Authorized when in use","attributes":{"icon":"mdi:map","friendly_name":"ta bo chay Location permission"},"last_changed":"2025-12-29T16:41:55.341004+00:00","last_reported":"2025-12-29T16:41:55.341004+00:00","last_updated":"2025-12-29T16:41:55.341004+00:00","context":{"id":"01KDNFSQCD5WYKWBYNDBQFG13W","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.ta_bo_chay_location_permission","state":"Authorized when in use","attributes":{"icon":"mdi:map","friendly_name":"ta bo chay Location permission"},"last_changed":"2026-01-04T08:33:55.714838+00:00","last_reported":"2026-01-04T08:33:55.714838+00:00","last_updated":"2026-01-04T08:33:55.714838+00:00","context":{"id":"01KE428G0243SHN807Q0S6CV2G","parent_id":null,"user_id":null}},
       "extra_data": {
         "native_value": "Authorized when in use",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2025-12-29T18:41:55.718383+00:00"
+      "last_seen": "2026-01-04T08:51:31.463223+00:00"
     },
     {
-      "state": {"entity_id":"sensor.ta_bo_chay_app_version","state":"2025.7.2","attributes":{"icon":"mdi:cellphone","friendly_name":"ta bo chay App Version"},"last_changed":"2025-12-29T16:41:55.341068+00:00","last_reported":"2025-12-29T16:41:55.341068+00:00","last_updated":"2025-12-29T16:41:55.341068+00:00","context":{"id":"01KDNFSQCDMD0G0GAF3P8NYD7N","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.ta_bo_chay_app_version","state":"2025.7.2","attributes":{"icon":"mdi:cellphone","friendly_name":"ta bo chay App Version"},"last_changed":"2026-01-04T08:33:55.714954+00:00","last_reported":"2026-01-04T08:33:55.714954+00:00","last_updated":"2026-01-04T08:33:55.714954+00:00","context":{"id":"01KE428G02T7S4DN1KK3KF7JDZ","parent_id":null,"user_id":null}},
       "extra_data": {
         "native_value": "2025.7.2",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2025-12-29T18:41:55.718383+00:00"
+      "last_seen": "2026-01-04T08:51:31.463223+00:00"
     },
     {
-      "state": {"entity_id":"sensor.ta_bo_chay_audio_output","state":"unavailable","attributes":{"icon":"mdi:dots-square","friendly_name":"ta bo chay Audio Output"},"last_changed":"2025-12-29T16:41:55.341130+00:00","last_reported":"2025-12-29T16:41:55.341130+00:00","last_updated":"2025-12-29T16:41:55.341130+00:00","context":{"id":"01KDNFSQCD904Z0ZN2R30YAJSD","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.ta_bo_chay_audio_output","state":"unavailable","attributes":{"icon":"mdi:dots-square","friendly_name":"ta bo chay Audio Output"},"last_changed":"2026-01-04T08:33:55.715110+00:00","last_reported":"2026-01-04T08:33:55.715110+00:00","last_updated":"2026-01-04T08:33:55.715110+00:00","context":{"id":"01KE428G03XP7KJ89XX48ZQ806","parent_id":null,"user_id":null}},
       "extra_data": {
         "native_value": "unavailable",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2025-12-29T18:41:55.718383+00:00"
+      "last_seen": "2026-01-04T08:51:31.463223+00:00"
     },
     {
-      "state": {"entity_id":"sensor.ta_bo_chay_connection_type","state":"unavailable","attributes":{"icon":"mdi:dots-square","friendly_name":"ta bo chay Connection Type"},"last_changed":"2025-12-29T16:41:55.341193+00:00","last_reported":"2025-12-29T16:41:55.341193+00:00","last_updated":"2025-12-29T16:41:55.341193+00:00","context":{"id":"01KDNFSQCDA8JF3Q6SHJ31KN0B","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.ta_bo_chay_connection_type","state":"unavailable","attributes":{"icon":"mdi:dots-square","friendly_name":"ta bo chay Connection Type"},"last_changed":"2026-01-04T08:33:55.715226+00:00","last_reported":"2026-01-04T08:33:55.715226+00:00","last_updated":"2026-01-04T08:33:55.715226+00:00","context":{"id":"01KE428G03HQ5F992271ENCAZY","parent_id":null,"user_id":null}},
       "extra_data": {
         "native_value": "unavailable",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2025-12-29T18:41:55.718383+00:00"
+      "last_seen": "2026-01-04T08:51:31.463223+00:00"
     },
     {
-      "state": {"entity_id":"sensor.smart_home_esp8266_temperature","state":"unavailable","attributes":{"state_class":"measurement","unit_of_measurement":"°C","device_class":"temperature","friendly_name":"Smart Home ESP8266 Temperature"},"last_changed":"2025-12-29T18:35:07.508537+00:00","last_reported":"2025-12-29T18:35:07.508537+00:00","last_updated":"2025-12-29T18:35:07.508537+00:00","context":{"id":"01KDNP90BMDC4XYJJBYX7EAR5M","parent_id":null,"user_id":null}},
-      "extra_data": {
-        "native_value": "27.50",
-        "native_unit_of_measurement": "°C"
-      },
-      "last_seen": "2025-12-29T18:41:55.718383+00:00"
+      "state": {"entity_id":"device_tracker.realme_gt_neo5_se","state":"unknown","attributes":{"source_type":"gps","friendly_name":"realme GT Neo5 SE"},"last_changed":"2026-01-04T08:33:55.715814+00:00","last_reported":"2026-01-04T08:33:55.715814+00:00","last_updated":"2026-01-04T08:33:55.715814+00:00","context":{"id":"01KE428G03A3YV1JJTN14FDZJY","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2026-01-04T08:51:31.463223+00:00"
     },
     {
-      "state": {"entity_id":"sensor.smart_home_esp8266_humidity","state":"unavailable","attributes":{"state_class":"measurement","unit_of_measurement":"%","device_class":"humidity","friendly_name":"Smart Home ESP8266 Humidity"},"last_changed":"2025-12-29T18:35:07.557767+00:00","last_reported":"2025-12-29T18:35:07.557767+00:00","last_updated":"2025-12-29T18:35:07.557767+00:00","context":{"id":"01KDNP90D5T2D56G97W935KBW9","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.realme_gt_neo5_se_battery_level","state":"93","attributes":{"state_class":"measurement","unit_of_measurement":"%","device_class":"battery","icon":"mdi:battery-90","friendly_name":"realme GT Neo5 SE Battery level"},"last_changed":"2026-01-04T08:36:00.765301+00:00","last_reported":"2026-01-04T08:36:00.765301+00:00","last_updated":"2026-01-04T08:36:00.765301+00:00","context":{"id":"01KE42CA3XMCKQRBYXK1NVW4CJ","parent_id":null,"user_id":null}},
       "extra_data": {
-        "native_value": "66.10",
+        "native_value": 93,
         "native_unit_of_measurement": "%"
       },
-      "last_seen": "2025-12-29T18:41:55.718383+00:00"
+      "last_seen": "2026-01-04T08:51:31.463223+00:00"
     },
     {
-      "state": {"entity_id":"binary_sensor.smart_home_esp8266_motion","state":"off","attributes":{"device_class":"motion","friendly_name":"Smart Home ESP8266 Motion"},"last_changed":"2025-12-29T18:40:23.400239+00:00","last_reported":"2025-12-29T18:40:23.400239+00:00","last_updated":"2025-12-29T18:40:23.400239+00:00","context":{"id":"01KDNPJMV8FB7Z3TBJMCZF10PS","parent_id":null,"user_id":null}},
-      "extra_data": null,
-      "last_seen": "2025-12-29T18:41:55.718383+00:00"
+      "state": {"entity_id":"sensor.realme_gt_neo5_se_battery_state","state":"not_charging","attributes":{"options":["charging","discharging","full","not_charging"],"device_class":"enum","icon":"mdi:battery","friendly_name":"realme GT Neo5 SE Battery state"},"last_changed":"2026-01-04T08:33:55.716269+00:00","last_reported":"2026-01-04T08:33:55.716269+00:00","last_updated":"2026-01-04T08:33:55.716269+00:00","context":{"id":"01KE428G04A9QAH70C2M72J2F0","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "not_charging",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2026-01-04T08:51:31.463223+00:00"
     },
     {
-      "state": {"entity_id":"switch.smart_home_esp8266_led_light","state":"off","attributes":{"icon":"mdi:lightbulb","friendly_name":"Smart Home ESP8266 LED Light"},"last_changed":"2025-12-29T18:35:28.907183+00:00","last_reported":"2025-12-29T18:35:28.907183+00:00","last_updated":"2025-12-29T18:35:28.907183+00:00","context":{"id":"01KDNP9N80JAK2J4W9J560NQA7","parent_id":null,"user_id":"f94b59ddbd2942a28a86bf37842106ac"}},
-      "extra_data": null,
-      "last_seen": "2025-12-29T18:41:55.718383+00:00"
+      "state": {"entity_id":"sensor.realme_gt_neo5_se_charger_type","state":"none","attributes":{"options":["ac","usb","wireless","dock","none"],"device_class":"enum","icon":"mdi:battery","friendly_name":"realme GT Neo5 SE Charger type"},"last_changed":"2026-01-04T08:33:55.716388+00:00","last_reported":"2026-01-04T08:33:55.716388+00:00","last_updated":"2026-01-04T08:33:55.716388+00:00","context":{"id":"01KE428G04BMFMYMQJ5X4G0J4H","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "none",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2026-01-04T08:51:31.463223+00:00"
     },
     {
-      "state": {"entity_id":"switch.smart_home_esp8266_buzzer","state":"off","attributes":{"icon":"mdi:bell","friendly_name":"Smart Home ESP8266 Buzzer"},"last_changed":"2025-12-29T18:33:06.415765+00:00","last_reported":"2025-12-29T18:33:06.415765+00:00","last_updated":"2025-12-29T18:33:06.415765+00:00","context":{"id":"01KDNP5A352YBJB203K7NXS1QZ","parent_id":null,"user_id":"f94b59ddbd2942a28a86bf37842106ac"}},
+      "state": {"entity_id":"tts.google_translate_en_com","state":"unknown","attributes":{"friendly_name":"Google Translate en com"},"last_changed":"2026-01-04T08:33:56.192924+00:00","last_reported":"2026-01-04T08:33:56.192924+00:00","last_updated":"2026-01-04T08:33:56.192924+00:00","context":{"id":"01KE428GF0Y1FMJCBJPJHJ4Q5E","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-12-29T18:41:55.718383+00:00"
+      "last_seen": "2026-01-04T08:51:31.463223+00:00"
     },
     {
-      "state": {"entity_id":"automation.bao_chay_khi_nhiet_do_30_trong_30s","state":"on","attributes":{"id":"1767028620670","last_triggered":null,"mode":"single","current":0,"friendly_name":"Báo cháy khi nhiệt độ > 30 trong 30s"},"last_changed":"2025-12-29T17:17:13.814283+00:00","last_reported":"2025-12-29T17:17:13.814507+00:00","last_updated":"2025-12-29T17:17:13.814283+00:00","context":{"id":"01KDNHTC6PWPSFB6JAPD9AA1RE","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"automation.bao_chay_khi_nhiet_do_30_trong_30s","state":"on","attributes":{"id":"1767028620670","last_triggered":"2026-01-04T08:45:29.971667+00:00","mode":"single","current":0,"friendly_name":"Bật báo động khi NĐ/ĐA vượt ngưỡng"},"last_changed":"2026-01-04T08:33:56.202791+00:00","last_reported":"2026-01-04T08:45:29.976682+00:00","last_updated":"2026-01-04T08:45:29.976682+00:00","context":{"id":"01KE42XNZKEZDZE4Q3KBA478S2","parent_id":"01KE42XM11594WYK117WHQBNAP","user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-12-29T18:41:55.718383+00:00"
+      "last_seen": "2026-01-04T08:51:31.463223+00:00"
+    },
+    {
+      "state": {"entity_id":"automation.bat_tat_den_khi_phat_hien_chuyen_dong","state":"on","attributes":{"id":"1767174274237","last_triggered":"2026-01-04T08:49:02.454489+00:00","mode":"restart","current":0,"friendly_name":"Bật/ tắt đèn khi phát hiện chuyển động"},"last_changed":"2026-01-04T08:33:56.202906+00:00","last_reported":"2026-01-04T08:50:20.451738+00:00","last_updated":"2026-01-04T08:50:20.451738+00:00","context":{"id":"01KE436HN38C1W9KHQ315WWQDV","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2026-01-04T08:51:31.463223+00:00"
+    },
+    {
+      "state": {"entity_id":"automation.tat_bao_chay_khi_nd_da_an_toan","state":"on","attributes":{"id":"1767352073231","last_triggered":"2026-01-04T08:46:47.954160+00:00","mode":"single","current":0,"friendly_name":"Tắt báo động khi NĐ/ĐA an toàn"},"last_changed":"2026-01-04T08:33:56.203063+00:00","last_reported":"2026-01-04T08:46:47.956562+00:00","last_updated":"2026-01-04T08:46:47.956562+00:00","context":{"id":"01KE43024HB6CNZ0KYNABHG47W","parent_id":"01KE4300606TXZ3BNAPR4Y945F","user_id":null}},
+      "extra_data": null,
+      "last_seen": "2026-01-04T08:51:31.463223+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.smart_home_esp8266_temperature","state":"27.70","attributes":{"state_class":"measurement","unit_of_measurement":"°C","device_class":"temperature","friendly_name":"Smart Home ESP8266 Temperature"},"last_changed":"2026-01-04T08:48:36.797651+00:00","last_reported":"2026-01-04T08:48:36.797651+00:00","last_updated":"2026-01-04T08:48:36.797651+00:00","context":{"id":"01KE433CDXPCRQZPWFRSQR78J8","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "27.70",
+        "native_unit_of_measurement": "°C"
+      },
+      "last_seen": "2026-01-04T08:51:31.463223+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.smart_home_esp8266_humidity","state":"58.60","attributes":{"state_class":"measurement","unit_of_measurement":"%","device_class":"humidity","friendly_name":"Smart Home ESP8266 Humidity"},"last_changed":"2026-01-04T08:48:37.003583+00:00","last_reported":"2026-01-04T08:48:37.003583+00:00","last_updated":"2026-01-04T08:48:37.003583+00:00","context":{"id":"01KE433CMBWAEVSXHB3H7JE8TX","parent_id":null,"user_id":null}},
+      "extra_data": {
+        "native_value": "58.60",
+        "native_unit_of_measurement": "%"
+      },
+      "last_seen": "2026-01-04T08:51:31.463223+00:00"
+    },
+    {
+      "state": {"entity_id":"binary_sensor.smart_home_esp8266_motion","state":"off","attributes":{"device_class":"motion","friendly_name":"Smart Home ESP8266 Motion"},"last_changed":"2026-01-04T08:50:00.449468+00:00","last_reported":"2026-01-04T08:50:00.449468+00:00","last_updated":"2026-01-04T08:50:00.449468+00:00","context":{"id":"01KE435Y41EHR8Q259BEKCD573","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2026-01-04T08:51:31.463223+00:00"
+    },
+    {
+      "state": {"entity_id":"switch.smart_home_esp8266_led_light","state":"off","attributes":{"icon":"mdi:lightbulb","friendly_name":"Smart Home ESP8266 LED Light"},"last_changed":"2026-01-04T08:50:20.534059+00:00","last_reported":"2026-01-04T08:50:20.534059+00:00","last_updated":"2026-01-04T08:50:20.534059+00:00","context":{"id":"01KE4345FPMJFC1AWSENNAC6Z6","parent_id":"01KE4343H4KG9GXND63T66WGCG","user_id":null}},
+      "extra_data": null,
+      "last_seen": "2026-01-04T08:51:31.463223+00:00"
+    },
+    {
+      "state": {"entity_id":"switch.smart_home_esp8266_buzzer","state":"off","attributes":{"icon":"mdi:bell","friendly_name":"Smart Home ESP8266 Buzzer"},"last_changed":"2026-01-04T08:46:48.118913+00:00","last_reported":"2026-01-04T08:46:48.118913+00:00","last_updated":"2026-01-04T08:46:48.118913+00:00","context":{"id":"01KE43024HB6CNZ0KYNABHG47W","parent_id":"01KE4300606TXZ3BNAPR4Y945F","user_id":null}},
+      "extra_data": null,
+      "last_seen": "2026-01-04T08:51:31.463223+00:00"
+    },
+    {
+      "state": {"entity_id":"automation.chup_anh_khi_coi_keu","state":"on","attributes":{"id":"1767352345317","last_triggered":"2026-01-04T08:45:29.768193+00:00","mode":"single","current":0,"friendly_name":"Chụp ảnh khi có tín hiệu cháy"},"last_changed":"2026-01-04T08:44:52.527254+00:00","last_reported":"2026-01-04T08:48:30.134652+00:00","last_updated":"2026-01-04T08:48:30.134652+00:00","context":{"id":"01KE4335XPKAG792AZ9NCM4V9K","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2026-01-04T08:51:31.463223+00:00"
+    },
+    {
+      "state": {"entity_id":"automation.camera_an_ninh","state":"on","attributes":{"id":"1767350518824","last_triggered":"2026-01-04T08:49:02.455383+00:00","mode":"single","current":0,"friendly_name":"Chụp ảnh khi phát hiện chuyển động"},"last_changed":"2026-01-04T08:45:10.759014+00:00","last_reported":"2026-01-04T08:49:22.601149+00:00","last_updated":"2026-01-04T08:49:22.601149+00:00","context":{"id":"01KE434S59VJKKXQRF9117CVBN","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2026-01-04T08:51:31.463223+00:00"
     },
     {
       "state": {"entity_id":"automation.tu_dong_bat_den_sau_11h","state":"on","attributes":{"id":"1767026474566","last_triggered":"2025-12-29T16:52:12.264453+00:00","mode":"single","current":0,"friendly_name":"Tu dong bat den sau 11h"},"last_changed":"2025-12-29T16:44:14.908570+00:00","last_reported":"2025-12-29T16:52:12.265881+00:00","last_updated":"2025-12-29T16:52:12.265881+00:00","context":{"id":"01KDNGCHV8D6TC5262RW4DNT7F","parent_id":null,"user_id":null}},

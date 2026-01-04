@@ -9,7 +9,8 @@
         "name": "toanehihi",
         "user_id": "f94b59ddbd2942a28a86bf37842106ac",
         "device_trackers": [
-          "device_tracker.ta_bo_chay"
+          "device_tracker.ta_bo_chay",
+          "device_tracker.realme_gt_neo5_se"
         ]
       }
     ]

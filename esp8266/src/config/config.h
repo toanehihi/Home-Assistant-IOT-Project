@@ -6,14 +6,14 @@
 // ============================================================================
 // WIFI CONFIGURATION
 // ============================================================================
-static const char* WIFI_SSID = "J19";
-static const char* WIFI_PASSWORD = "hoangchimbe";
+static const char* WIFI_SSID = "K**A";
+static const char* WIFI_PASSWORD = "tumotdenchin";
 const int WIFI_CONNECT_TIMEOUT = 30;  // Số lần thử kết nối WiFi (30 * 500ms = 15s)
 
 // ============================================================================
 // MQTT CONFIGURATION
 // ============================================================================
-static const char* MQTT_SERVER = "192.168.1.10";
+static const char* MQTT_SERVER = "192.168.20.249";
 const int MQTT_PORT = 1883;
 static const char* MQTT_USER = "";
 static const char* MQTT_PASS = "";
