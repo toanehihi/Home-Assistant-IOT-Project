@@ -2,5 +2,2978 @@
   "version": 1,
   "minor_version": 1,
   "key": "trace.saved_traces",
-  "data": {}
+  "data": {
+    "automation.1767174274237": [
+      {
+        "extended_dict": {
+          "last_step": "action/1",
+          "run_id": "ecba8a5531b6fe42d34bf93d595e1b45",
+          "state": "stopped",
+          "script_execution": "cancelled",
+          "timestamp": {
+            "start": "2026-01-05T03:30:24.392444+00:00",
+            "finish": "2026-01-05T03:31:17.248398+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1767174274237",
+          "trigger": "state of binary_sensor.smart_home_esp8266_motion",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2026-01-05T03:30:24.392511+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.bat_tat_den_khi_phat_hien_chuyen_dong",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1767174274237",
+                      "last_triggered": "2026-01-04T08:49:02.454489+00:00",
+                      "mode": "restart",
+                      "current": 0,
+                      "friendly_name": "B\u1eadt/ t\u1eaft \u0111\u00e8n khi ph\u00e1t hi\u1ec7n chuy\u1ec3n \u0111\u1ed9ng"
+                    },
+                    "last_changed": "2026-01-05T03:21:00.965991+00:00",
+                    "last_reported": "2026-01-05T03:21:00.965991+00:00",
+                    "last_updated": "2026-01-05T03:21:00.965991+00:00",
+                    "context": {
+                      "id": "01KE62R895YYD4MXEAP4NZ06M3",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "device",
+                    "entity_id": "binary_sensor.smart_home_esp8266_motion",
+                    "from_state": {
+                      "entity_id": "binary_sensor.smart_home_esp8266_motion",
+                      "state": "unknown",
+                      "attributes": {
+                        "device_class": "motion",
+                        "friendly_name": "Smart Home ESP8266 Motion"
+                      },
+                      "last_changed": "2026-01-05T03:30:21.760263+00:00",
+                      "last_reported": "2026-01-05T03:30:21.760263+00:00",
+                      "last_updated": "2026-01-05T03:30:21.760263+00:00",
+                      "context": {
+                        "id": "01KE639BY0397YA52VXN57N7N9",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "binary_sensor.smart_home_esp8266_motion",
+                      "state": "on",
+                      "attributes": {
+                        "device_class": "motion",
+                        "friendly_name": "Smart Home ESP8266 Motion"
+                      },
+                      "last_changed": "2026-01-05T03:30:22.392675+00:00",
+                      "last_reported": "2026-01-05T03:30:22.392675+00:00",
+                      "last_updated": "2026-01-05T03:30:22.392675+00:00",
+                      "context": {
+                        "id": "01KE639CHR1F12XVMFJAB5PEXD",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "for": {
+                      "__type": "<class 'datetime.timedelta'>",
+                      "total_seconds": 2.0
+                    },
+                    "attribute": null,
+                    "description": "state of binary_sensor.smart_home_esp8266_motion"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2026-01-05T03:30:24.393026+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01KE639EG8YPPJDJJ0SYKFRFZ2",
+                    "parent_id": "01KE639CHR1F12XVMFJAB5PEXD",
+                    "user_id": null
+                  }
+                }
+              }
+            ],
+            "action/1": [
+              {
+                "path": "action/1",
+                "timestamp": "2026-01-05T03:30:24.400106+00:00",
+                "changed_variables": {
+                  "wait": {
+                    "remaining": null,
+                    "completed": false,
+                    "trigger": null
+                  }
+                },
+                "result": {
+                  "wait": {
+                    "remaining": null,
+                    "completed": false,
+                    "trigger": null
+                  }
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1767174274237",
+            "alias": "B\u1eadt/ t\u1eaft \u0111\u00e8n khi ph\u00e1t hi\u1ec7n chuy\u1ec3n \u0111\u1ed9ng",
+            "description": "",
+            "triggers": [
+              {
+                "type": "motion",
+                "device_id": "a169fa3454dca77467c7a1828beb8e50",
+                "entity_id": "a2dd3c8fef6893695289092c5d1c44c9",
+                "domain": "binary_sensor",
+                "trigger": "device",
+                "for": {
+                  "hours": 0,
+                  "minutes": 0,
+                  "seconds": 2
+                }
+              }
+            ],
+            "conditions": [],
+            "actions": [
+              {
+                "type": "turn_on",
+                "device_id": "a169fa3454dca77467c7a1828beb8e50",
+                "entity_id": "f2fdd7ab3ba0e23a2fce2a75a580f9b4",
+                "domain": "switch"
+              },
+              {
+                "wait_for_trigger": [
+                  {
+                    "type": "no_motion",
+                    "device_id": "a169fa3454dca77467c7a1828beb8e50",
+                    "entity_id": "a2dd3c8fef6893695289092c5d1c44c9",
+                    "domain": "binary_sensor",
+                    "trigger": "device",
+                    "for": {
+                      "hours": 0,
+                      "minutes": 0,
+                      "seconds": 20
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "turn_off",
+                "device_id": "a169fa3454dca77467c7a1828beb8e50",
+                "entity_id": "f2fdd7ab3ba0e23a2fce2a75a580f9b4",
+                "domain": "switch"
+              }
+            ],
+            "mode": "restart"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01KE639EG8YPPJDJJ0SYKFRFZ2",
+            "parent_id": "01KE639CHR1F12XVMFJAB5PEXD",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/1",
+          "run_id": "ecba8a5531b6fe42d34bf93d595e1b45",
+          "state": "stopped",
+          "script_execution": "cancelled",
+          "timestamp": {
+            "start": "2026-01-05T03:30:24.392444+00:00",
+            "finish": "2026-01-05T03:31:17.248398+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1767174274237",
+          "trigger": "state of binary_sensor.smart_home_esp8266_motion"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/1",
+          "run_id": "a6908f95a789af151a3d21058bd72585",
+          "state": "stopped",
+          "script_execution": "cancelled",
+          "timestamp": {
+            "start": "2026-01-05T03:31:17.245213+00:00",
+            "finish": "2026-01-05T03:32:32.920379+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1767174274237",
+          "trigger": "state of binary_sensor.smart_home_esp8266_motion",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2026-01-05T03:31:17.245277+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.bat_tat_den_khi_phat_hien_chuyen_dong",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1767174274237",
+                      "last_triggered": "2026-01-05T03:30:24.392756+00:00",
+                      "mode": "restart",
+                      "current": 1,
+                      "friendly_name": "B\u1eadt/ t\u1eaft \u0111\u00e8n khi ph\u00e1t hi\u1ec7n chuy\u1ec3n \u0111\u1ed9ng"
+                    },
+                    "last_changed": "2026-01-05T03:21:00.965991+00:00",
+                    "last_reported": "2026-01-05T03:30:24.400881+00:00",
+                    "last_updated": "2026-01-05T03:30:24.392817+00:00",
+                    "context": {
+                      "id": "01KE639EG8YPPJDJJ0SYKFRFZ2",
+                      "parent_id": "01KE639CHR1F12XVMFJAB5PEXD",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "device",
+                    "entity_id": "binary_sensor.smart_home_esp8266_motion",
+                    "from_state": {
+                      "entity_id": "binary_sensor.smart_home_esp8266_motion",
+                      "state": "off",
+                      "attributes": {
+                        "device_class": "motion",
+                        "friendly_name": "Smart Home ESP8266 Motion"
+                      },
+                      "last_changed": "2026-01-05T03:31:10.532271+00:00",
+                      "last_reported": "2026-01-05T03:31:10.532271+00:00",
+                      "last_updated": "2026-01-05T03:31:10.532271+00:00",
+                      "context": {
+                        "id": "01KE63AVJ4ZHFFJSB1SFWPQNV6",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "binary_sensor.smart_home_esp8266_motion",
+                      "state": "on",
+                      "attributes": {
+                        "device_class": "motion",
+                        "friendly_name": "Smart Home ESP8266 Motion"
+                      },
+                      "last_changed": "2026-01-05T03:31:15.243013+00:00",
+                      "last_reported": "2026-01-05T03:31:15.243013+00:00",
+                      "last_updated": "2026-01-05T03:31:15.243013+00:00",
+                      "context": {
+                        "id": "01KE63B05BBQHECTY77HSZ1FR5",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "for": {
+                      "__type": "<class 'datetime.timedelta'>",
+                      "total_seconds": 2.0
+                    },
+                    "attribute": null,
+                    "description": "state of binary_sensor.smart_home_esp8266_motion"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2026-01-05T03:31:17.248673+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01KE63B23X1B59Z37Y8S7WH4BP",
+                    "parent_id": "01KE63B05BBQHECTY77HSZ1FR5",
+                    "user_id": null
+                  }
+                }
+              }
+            ],
+            "action/1": [
+              {
+                "path": "action/1",
+                "timestamp": "2026-01-05T03:31:17.249911+00:00",
+                "changed_variables": {
+                  "wait": {
+                    "remaining": null,
+                    "completed": false,
+                    "trigger": null
+                  }
+                },
+                "result": {
+                  "wait": {
+                    "remaining": null,
+                    "completed": false,
+                    "trigger": null
+                  }
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1767174274237",
+            "alias": "B\u1eadt/ t\u1eaft \u0111\u00e8n khi ph\u00e1t hi\u1ec7n chuy\u1ec3n \u0111\u1ed9ng",
+            "description": "",
+            "triggers": [
+              {
+                "type": "motion",
+                "device_id": "a169fa3454dca77467c7a1828beb8e50",
+                "entity_id": "a2dd3c8fef6893695289092c5d1c44c9",
+                "domain": "binary_sensor",
+                "trigger": "device",
+                "for": {
+                  "hours": 0,
+                  "minutes": 0,
+                  "seconds": 2
+                }
+              }
+            ],
+            "conditions": [],
+            "actions": [
+              {
+                "type": "turn_on",
+                "device_id": "a169fa3454dca77467c7a1828beb8e50",
+                "entity_id": "f2fdd7ab3ba0e23a2fce2a75a580f9b4",
+                "domain": "switch"
+              },
+              {
+                "wait_for_trigger": [
+                  {
+                    "type": "no_motion",
+                    "device_id": "a169fa3454dca77467c7a1828beb8e50",
+                    "entity_id": "a2dd3c8fef6893695289092c5d1c44c9",
+                    "domain": "binary_sensor",
+                    "trigger": "device",
+                    "for": {
+                      "hours": 0,
+                      "minutes": 0,
+                      "seconds": 20
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "turn_off",
+                "device_id": "a169fa3454dca77467c7a1828beb8e50",
+                "entity_id": "f2fdd7ab3ba0e23a2fce2a75a580f9b4",
+                "domain": "switch"
+              }
+            ],
+            "mode": "restart"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01KE63B23X1B59Z37Y8S7WH4BP",
+            "parent_id": "01KE63B05BBQHECTY77HSZ1FR5",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/1",
+          "run_id": "a6908f95a789af151a3d21058bd72585",
+          "state": "stopped",
+          "script_execution": "cancelled",
+          "timestamp": {
+            "start": "2026-01-05T03:31:17.245213+00:00",
+            "finish": "2026-01-05T03:32:32.920379+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1767174274237",
+          "trigger": "state of binary_sensor.smart_home_esp8266_motion"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/1",
+          "run_id": "34352a1eae462aa2263c958f131479c8",
+          "state": "stopped",
+          "script_execution": "cancelled",
+          "timestamp": {
+            "start": "2026-01-05T03:32:32.917444+00:00",
+            "finish": "2026-01-05T03:32:43.877151+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1767174274237",
+          "trigger": "state of binary_sensor.smart_home_esp8266_motion",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2026-01-05T03:32:32.917509+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.bat_tat_den_khi_phat_hien_chuyen_dong",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1767174274237",
+                      "last_triggered": "2026-01-05T03:31:17.248507+00:00",
+                      "mode": "restart",
+                      "current": 1,
+                      "friendly_name": "B\u1eadt/ t\u1eaft \u0111\u00e8n khi ph\u00e1t hi\u1ec7n chuy\u1ec3n \u0111\u1ed9ng"
+                    },
+                    "last_changed": "2026-01-05T03:21:00.965991+00:00",
+                    "last_reported": "2026-01-05T03:31:17.250505+00:00",
+                    "last_updated": "2026-01-05T03:31:17.248534+00:00",
+                    "context": {
+                      "id": "01KE63B23X1B59Z37Y8S7WH4BP",
+                      "parent_id": "01KE63B05BBQHECTY77HSZ1FR5",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "device",
+                    "entity_id": "binary_sensor.smart_home_esp8266_motion",
+                    "from_state": {
+                      "entity_id": "binary_sensor.smart_home_esp8266_motion",
+                      "state": "off",
+                      "attributes": {
+                        "device_class": "motion",
+                        "friendly_name": "Smart Home ESP8266 Motion"
+                      },
+                      "last_changed": "2026-01-05T03:32:23.761379+00:00",
+                      "last_reported": "2026-01-05T03:32:23.761379+00:00",
+                      "last_updated": "2026-01-05T03:32:23.761379+00:00",
+                      "context": {
+                        "id": "01KE63D32HYHJZSR8REHJ89JF3",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "binary_sensor.smart_home_esp8266_motion",
+                      "state": "on",
+                      "attributes": {
+                        "device_class": "motion",
+                        "friendly_name": "Smart Home ESP8266 Motion"
+                      },
+                      "last_changed": "2026-01-05T03:32:30.915865+00:00",
+                      "last_reported": "2026-01-05T03:32:30.915865+00:00",
+                      "last_updated": "2026-01-05T03:32:30.915865+00:00",
+                      "context": {
+                        "id": "01KE63DA23XVTCJMX73YKRESQT",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "for": {
+                      "__type": "<class 'datetime.timedelta'>",
+                      "total_seconds": 2.0
+                    },
+                    "attribute": null,
+                    "description": "state of binary_sensor.smart_home_esp8266_motion"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2026-01-05T03:32:32.920682+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01KE63DC0NRZC5Y6MRHRNZAFSP",
+                    "parent_id": "01KE63DA23XVTCJMX73YKRESQT",
+                    "user_id": null
+                  }
+                }
+              }
+            ],
+            "action/1": [
+              {
+                "path": "action/1",
+                "timestamp": "2026-01-05T03:32:32.921827+00:00",
+                "changed_variables": {
+                  "wait": {
+                    "remaining": null,
+                    "completed": false,
+                    "trigger": null
+                  }
+                },
+                "result": {
+                  "wait": {
+                    "remaining": null,
+                    "completed": false,
+                    "trigger": null
+                  }
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1767174274237",
+            "alias": "B\u1eadt/ t\u1eaft \u0111\u00e8n khi ph\u00e1t hi\u1ec7n chuy\u1ec3n \u0111\u1ed9ng",
+            "description": "",
+            "triggers": [
+              {
+                "type": "motion",
+                "device_id": "a169fa3454dca77467c7a1828beb8e50",
+                "entity_id": "a2dd3c8fef6893695289092c5d1c44c9",
+                "domain": "binary_sensor",
+                "trigger": "device",
+                "for": {
+                  "hours": 0,
+                  "minutes": 0,
+                  "seconds": 2
+                }
+              }
+            ],
+            "conditions": [],
+            "actions": [
+              {
+                "type": "turn_on",
+                "device_id": "a169fa3454dca77467c7a1828beb8e50",
+                "entity_id": "f2fdd7ab3ba0e23a2fce2a75a580f9b4",
+                "domain": "switch"
+              },
+              {
+                "wait_for_trigger": [
+                  {
+                    "type": "no_motion",
+                    "device_id": "a169fa3454dca77467c7a1828beb8e50",
+                    "entity_id": "a2dd3c8fef6893695289092c5d1c44c9",
+                    "domain": "binary_sensor",
+                    "trigger": "device",
+                    "for": {
+                      "hours": 0,
+                      "minutes": 0,
+                      "seconds": 20
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "turn_off",
+                "device_id": "a169fa3454dca77467c7a1828beb8e50",
+                "entity_id": "f2fdd7ab3ba0e23a2fce2a75a580f9b4",
+                "domain": "switch"
+              }
+            ],
+            "mode": "restart"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01KE63DC0NRZC5Y6MRHRNZAFSP",
+            "parent_id": "01KE63DA23XVTCJMX73YKRESQT",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/1",
+          "run_id": "34352a1eae462aa2263c958f131479c8",
+          "state": "stopped",
+          "script_execution": "cancelled",
+          "timestamp": {
+            "start": "2026-01-05T03:32:32.917444+00:00",
+            "finish": "2026-01-05T03:32:43.877151+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1767174274237",
+          "trigger": "state of binary_sensor.smart_home_esp8266_motion"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/1",
+          "run_id": "8562e98f944df81831b1531b6dd60bbf",
+          "state": "stopped",
+          "script_execution": "cancelled",
+          "timestamp": {
+            "start": "2026-01-05T03:32:43.876182+00:00",
+            "finish": "2026-01-05T03:33:12.582106+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1767174274237",
+          "trigger": "state of binary_sensor.smart_home_esp8266_motion",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2026-01-05T03:32:43.876249+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.bat_tat_den_khi_phat_hien_chuyen_dong",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1767174274237",
+                      "last_triggered": "2026-01-05T03:32:32.920524+00:00",
+                      "mode": "restart",
+                      "current": 1,
+                      "friendly_name": "B\u1eadt/ t\u1eaft \u0111\u00e8n khi ph\u00e1t hi\u1ec7n chuy\u1ec3n \u0111\u1ed9ng"
+                    },
+                    "last_changed": "2026-01-05T03:21:00.965991+00:00",
+                    "last_reported": "2026-01-05T03:32:32.922888+00:00",
+                    "last_updated": "2026-01-05T03:32:32.920549+00:00",
+                    "context": {
+                      "id": "01KE63DC0NRZC5Y6MRHRNZAFSP",
+                      "parent_id": "01KE63DA23XVTCJMX73YKRESQT",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "device",
+                    "entity_id": "binary_sensor.smart_home_esp8266_motion",
+                    "from_state": {
+                      "entity_id": "binary_sensor.smart_home_esp8266_motion",
+                      "state": "off",
+                      "attributes": {
+                        "device_class": "motion",
+                        "friendly_name": "Smart Home ESP8266 Motion"
+                      },
+                      "last_changed": "2026-01-05T03:32:37.368718+00:00",
+                      "last_reported": "2026-01-05T03:32:37.368718+00:00",
+                      "last_updated": "2026-01-05T03:32:37.368718+00:00",
+                      "context": {
+                        "id": "01KE63DGBR34A646YTW57QR9CW",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "binary_sensor.smart_home_esp8266_motion",
+                      "state": "on",
+                      "attributes": {
+                        "device_class": "motion",
+                        "friendly_name": "Smart Home ESP8266 Motion"
+                      },
+                      "last_changed": "2026-01-05T03:32:41.874611+00:00",
+                      "last_reported": "2026-01-05T03:32:41.874611+00:00",
+                      "last_updated": "2026-01-05T03:32:41.874611+00:00",
+                      "context": {
+                        "id": "01KE63DMRJAKEHMWXGBVGPWYM7",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "for": {
+                      "__type": "<class 'datetime.timedelta'>",
+                      "total_seconds": 2.0
+                    },
+                    "attribute": null,
+                    "description": "state of binary_sensor.smart_home_esp8266_motion"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2026-01-05T03:32:43.877493+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01KE63DPQ4MKP2BTE1KJ52GCC5",
+                    "parent_id": "01KE63DMRJAKEHMWXGBVGPWYM7",
+                    "user_id": null
+                  }
+                }
+              }
+            ],
+            "action/1": [
+              {
+                "path": "action/1",
+                "timestamp": "2026-01-05T03:32:43.880273+00:00",
+                "changed_variables": {
+                  "wait": {
+                    "remaining": null,
+                    "completed": false,
+                    "trigger": null
+                  }
+                },
+                "result": {
+                  "wait": {
+                    "remaining": null,
+                    "completed": false,
+                    "trigger": null
+                  }
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1767174274237",
+            "alias": "B\u1eadt/ t\u1eaft \u0111\u00e8n khi ph\u00e1t hi\u1ec7n chuy\u1ec3n \u0111\u1ed9ng",
+            "description": "",
+            "triggers": [
+              {
+                "type": "motion",
+                "device_id": "a169fa3454dca77467c7a1828beb8e50",
+                "entity_id": "a2dd3c8fef6893695289092c5d1c44c9",
+                "domain": "binary_sensor",
+                "trigger": "device",
+                "for": {
+                  "hours": 0,
+                  "minutes": 0,
+                  "seconds": 2
+                }
+              }
+            ],
+            "conditions": [],
+            "actions": [
+              {
+                "type": "turn_on",
+                "device_id": "a169fa3454dca77467c7a1828beb8e50",
+                "entity_id": "f2fdd7ab3ba0e23a2fce2a75a580f9b4",
+                "domain": "switch"
+              },
+              {
+                "wait_for_trigger": [
+                  {
+                    "type": "no_motion",
+                    "device_id": "a169fa3454dca77467c7a1828beb8e50",
+                    "entity_id": "a2dd3c8fef6893695289092c5d1c44c9",
+                    "domain": "binary_sensor",
+                    "trigger": "device",
+                    "for": {
+                      "hours": 0,
+                      "minutes": 0,
+                      "seconds": 20
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "turn_off",
+                "device_id": "a169fa3454dca77467c7a1828beb8e50",
+                "entity_id": "f2fdd7ab3ba0e23a2fce2a75a580f9b4",
+                "domain": "switch"
+              }
+            ],
+            "mode": "restart"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01KE63DPQ4MKP2BTE1KJ52GCC5",
+            "parent_id": "01KE63DMRJAKEHMWXGBVGPWYM7",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/1",
+          "run_id": "8562e98f944df81831b1531b6dd60bbf",
+          "state": "stopped",
+          "script_execution": "cancelled",
+          "timestamp": {
+            "start": "2026-01-05T03:32:43.876182+00:00",
+            "finish": "2026-01-05T03:33:12.582106+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1767174274237",
+          "trigger": "state of binary_sensor.smart_home_esp8266_motion"
+        }
+      }
+    ],
+    "automation.1767350518824": [
+      {
+        "extended_dict": {
+          "last_step": "action/1",
+          "run_id": "e795b288ece391004453bd91bc79b80b",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2026-01-05T03:30:24.393851+00:00",
+            "finish": "2026-01-05T03:30:44.399487+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1767350518824",
+          "trigger": "state of binary_sensor.smart_home_esp8266_motion",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2026-01-05T03:30:24.393889+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.camera_an_ninh",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1767350518824",
+                      "last_triggered": "2026-01-04T08:49:02.455383+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Ch\u1ee5p \u1ea3nh khi ph\u00e1t hi\u1ec7n chuy\u1ec3n \u0111\u1ed9ng"
+                    },
+                    "last_changed": "2026-01-05T03:21:00.966071+00:00",
+                    "last_reported": "2026-01-05T03:21:00.966071+00:00",
+                    "last_updated": "2026-01-05T03:21:00.966071+00:00",
+                    "context": {
+                      "id": "01KE62R896ZF3PQCWD8KJ7KJ38",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "device",
+                    "entity_id": "binary_sensor.smart_home_esp8266_motion",
+                    "from_state": {
+                      "entity_id": "binary_sensor.smart_home_esp8266_motion",
+                      "state": "unknown",
+                      "attributes": {
+                        "device_class": "motion",
+                        "friendly_name": "Smart Home ESP8266 Motion"
+                      },
+                      "last_changed": "2026-01-05T03:30:21.760263+00:00",
+                      "last_reported": "2026-01-05T03:30:21.760263+00:00",
+                      "last_updated": "2026-01-05T03:30:21.760263+00:00",
+                      "context": {
+                        "id": "01KE639BY0397YA52VXN57N7N9",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "binary_sensor.smart_home_esp8266_motion",
+                      "state": "on",
+                      "attributes": {
+                        "device_class": "motion",
+                        "friendly_name": "Smart Home ESP8266 Motion"
+                      },
+                      "last_changed": "2026-01-05T03:30:22.392675+00:00",
+                      "last_reported": "2026-01-05T03:30:22.392675+00:00",
+                      "last_updated": "2026-01-05T03:30:22.392675+00:00",
+                      "context": {
+                        "id": "01KE639CHR1F12XVMFJAB5PEXD",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "for": {
+                      "__type": "<class 'datetime.timedelta'>",
+                      "total_seconds": 2.0
+                    },
+                    "attribute": null,
+                    "description": "state of binary_sensor.smart_home_esp8266_motion"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2026-01-05T03:30:24.394098+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01KE639EG9R4C7EGBQJ72MFY15",
+                    "parent_id": "01KE639CHR1F12XVMFJAB5PEXD",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "camera",
+                    "service": "snapshot",
+                    "service_data": {
+                      "filename": "/media/local/detect_human/snapshot_trom_20260105-103024.jpg",
+                      "entity_id": [
+                        "camera.camera_an_ninh_camera_feed"
+                      ]
+                    },
+                    "target": {
+                      "entity_id": [
+                        "camera.camera_an_ninh_camera_feed"
+                      ]
+                    }
+                  },
+                  "running_script": false
+                }
+              }
+            ],
+            "action/1": [
+              {
+                "path": "action/1",
+                "timestamp": "2026-01-05T03:30:24.397208+00:00",
+                "result": {
+                  "delay": 20.0,
+                  "done": true
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1767350518824",
+            "alias": "Ch\u1ee5p \u1ea3nh khi ph\u00e1t hi\u1ec7n chuy\u1ec3n \u0111\u1ed9ng",
+            "description": "",
+            "triggers": [
+              {
+                "type": "motion",
+                "device_id": "a169fa3454dca77467c7a1828beb8e50",
+                "entity_id": "a2dd3c8fef6893695289092c5d1c44c9",
+                "domain": "binary_sensor",
+                "trigger": "device",
+                "for": {
+                  "hours": 0,
+                  "minutes": 0,
+                  "seconds": 2
+                }
+              }
+            ],
+            "conditions": [],
+            "actions": [
+              {
+                "action": "camera.snapshot",
+                "metadata": {},
+                "data": {
+                  "filename": "/media/local/detect_human/snapshot_trom_{{ now().strftime('%Y%m%d-%H%M%S') }}.jpg"
+                },
+                "target": {
+                  "entity_id": "camera.camera_an_ninh_camera_feed"
+                }
+              },
+              {
+                "delay": {
+                  "hours": 0,
+                  "minutes": 0,
+                  "seconds": 20,
+                  "milliseconds": 0
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01KE639EG9R4C7EGBQJ72MFY15",
+            "parent_id": "01KE639CHR1F12XVMFJAB5PEXD",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/1",
+          "run_id": "e795b288ece391004453bd91bc79b80b",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2026-01-05T03:30:24.393851+00:00",
+            "finish": "2026-01-05T03:30:44.399487+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1767350518824",
+          "trigger": "state of binary_sensor.smart_home_esp8266_motion"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/1",
+          "run_id": "a80eee71e8c3da28f0228e8a5f716b7c",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2026-01-05T03:31:17.245538+00:00",
+            "finish": "2026-01-05T03:31:37.247718+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1767350518824",
+          "trigger": "state of binary_sensor.smart_home_esp8266_motion",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2026-01-05T03:31:17.245607+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.camera_an_ninh",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1767350518824",
+                      "last_triggered": "2026-01-05T03:30:24.393951+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Ch\u1ee5p \u1ea3nh khi ph\u00e1t hi\u1ec7n chuy\u1ec3n \u0111\u1ed9ng"
+                    },
+                    "last_changed": "2026-01-05T03:21:00.966071+00:00",
+                    "last_reported": "2026-01-05T03:30:44.398392+00:00",
+                    "last_updated": "2026-01-05T03:30:44.398392+00:00",
+                    "context": {
+                      "id": "01KE63A21ESQ6ZY32721SAT17W",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "device",
+                    "entity_id": "binary_sensor.smart_home_esp8266_motion",
+                    "from_state": {
+                      "entity_id": "binary_sensor.smart_home_esp8266_motion",
+                      "state": "off",
+                      "attributes": {
+                        "device_class": "motion",
+                        "friendly_name": "Smart Home ESP8266 Motion"
+                      },
+                      "last_changed": "2026-01-05T03:31:10.532271+00:00",
+                      "last_reported": "2026-01-05T03:31:10.532271+00:00",
+                      "last_updated": "2026-01-05T03:31:10.532271+00:00",
+                      "context": {
+                        "id": "01KE63AVJ4ZHFFJSB1SFWPQNV6",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "binary_sensor.smart_home_esp8266_motion",
+                      "state": "on",
+                      "attributes": {
+                        "device_class": "motion",
+                        "friendly_name": "Smart Home ESP8266 Motion"
+                      },
+                      "last_changed": "2026-01-05T03:31:15.243013+00:00",
+                      "last_reported": "2026-01-05T03:31:15.243013+00:00",
+                      "last_updated": "2026-01-05T03:31:15.243013+00:00",
+                      "context": {
+                        "id": "01KE63B05BBQHECTY77HSZ1FR5",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "for": {
+                      "__type": "<class 'datetime.timedelta'>",
+                      "total_seconds": 2.0
+                    },
+                    "attribute": null,
+                    "description": "state of binary_sensor.smart_home_esp8266_motion"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2026-01-05T03:31:17.245919+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01KE63B23XT2VZ3AHX3FZBP8BP",
+                    "parent_id": "01KE63B05BBQHECTY77HSZ1FR5",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "camera",
+                    "service": "snapshot",
+                    "service_data": {
+                      "filename": "/media/local/detect_human/snapshot_trom_20260105-103117.jpg",
+                      "entity_id": [
+                        "camera.camera_an_ninh_camera_feed"
+                      ]
+                    },
+                    "target": {
+                      "entity_id": [
+                        "camera.camera_an_ninh_camera_feed"
+                      ]
+                    }
+                  },
+                  "running_script": false
+                }
+              }
+            ],
+            "action/1": [
+              {
+                "path": "action/1",
+                "timestamp": "2026-01-05T03:31:17.246646+00:00",
+                "result": {
+                  "delay": 20.0,
+                  "done": true
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1767350518824",
+            "alias": "Ch\u1ee5p \u1ea3nh khi ph\u00e1t hi\u1ec7n chuy\u1ec3n \u0111\u1ed9ng",
+            "description": "",
+            "triggers": [
+              {
+                "type": "motion",
+                "device_id": "a169fa3454dca77467c7a1828beb8e50",
+                "entity_id": "a2dd3c8fef6893695289092c5d1c44c9",
+                "domain": "binary_sensor",
+                "trigger": "device",
+                "for": {
+                  "hours": 0,
+                  "minutes": 0,
+                  "seconds": 2
+                }
+              }
+            ],
+            "conditions": [],
+            "actions": [
+              {
+                "action": "camera.snapshot",
+                "metadata": {},
+                "data": {
+                  "filename": "/media/local/detect_human/snapshot_trom_{{ now().strftime('%Y%m%d-%H%M%S') }}.jpg"
+                },
+                "target": {
+                  "entity_id": "camera.camera_an_ninh_camera_feed"
+                }
+              },
+              {
+                "delay": {
+                  "hours": 0,
+                  "minutes": 0,
+                  "seconds": 20,
+                  "milliseconds": 0
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01KE63B23XT2VZ3AHX3FZBP8BP",
+            "parent_id": "01KE63B05BBQHECTY77HSZ1FR5",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/1",
+          "run_id": "a80eee71e8c3da28f0228e8a5f716b7c",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2026-01-05T03:31:17.245538+00:00",
+            "finish": "2026-01-05T03:31:37.247718+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1767350518824",
+          "trigger": "state of binary_sensor.smart_home_esp8266_motion"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/1",
+          "run_id": "e9908d3fc2fb54df11e89e03da3731ee",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2026-01-05T03:32:32.917780+00:00",
+            "finish": "2026-01-05T03:32:52.921681+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1767350518824",
+          "trigger": "state of binary_sensor.smart_home_esp8266_motion",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2026-01-05T03:32:32.917816+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.camera_an_ninh",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1767350518824",
+                      "last_triggered": "2026-01-05T03:31:17.245718+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Ch\u1ee5p \u1ea3nh khi ph\u00e1t hi\u1ec7n chuy\u1ec3n \u0111\u1ed9ng"
+                    },
+                    "last_changed": "2026-01-05T03:21:00.966071+00:00",
+                    "last_reported": "2026-01-05T03:31:37.245866+00:00",
+                    "last_updated": "2026-01-05T03:31:37.245866+00:00",
+                    "context": {
+                      "id": "01KE63BNMX03ZSX7ZZWXJ1TT9E",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "device",
+                    "entity_id": "binary_sensor.smart_home_esp8266_motion",
+                    "from_state": {
+                      "entity_id": "binary_sensor.smart_home_esp8266_motion",
+                      "state": "off",
+                      "attributes": {
+                        "device_class": "motion",
+                        "friendly_name": "Smart Home ESP8266 Motion"
+                      },
+                      "last_changed": "2026-01-05T03:32:23.761379+00:00",
+                      "last_reported": "2026-01-05T03:32:23.761379+00:00",
+                      "last_updated": "2026-01-05T03:32:23.761379+00:00",
+                      "context": {
+                        "id": "01KE63D32HYHJZSR8REHJ89JF3",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "binary_sensor.smart_home_esp8266_motion",
+                      "state": "on",
+                      "attributes": {
+                        "device_class": "motion",
+                        "friendly_name": "Smart Home ESP8266 Motion"
+                      },
+                      "last_changed": "2026-01-05T03:32:30.915865+00:00",
+                      "last_reported": "2026-01-05T03:32:30.915865+00:00",
+                      "last_updated": "2026-01-05T03:32:30.915865+00:00",
+                      "context": {
+                        "id": "01KE63DA23XVTCJMX73YKRESQT",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "for": {
+                      "__type": "<class 'datetime.timedelta'>",
+                      "total_seconds": 2.0
+                    },
+                    "attribute": null,
+                    "description": "state of binary_sensor.smart_home_esp8266_motion"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2026-01-05T03:32:32.918089+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01KE63DC0N32N0F7K6KNJKH8GQ",
+                    "parent_id": "01KE63DA23XVTCJMX73YKRESQT",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "camera",
+                    "service": "snapshot",
+                    "service_data": {
+                      "filename": "/media/local/detect_human/snapshot_trom_20260105-103232.jpg",
+                      "entity_id": [
+                        "camera.camera_an_ninh_camera_feed"
+                      ]
+                    },
+                    "target": {
+                      "entity_id": [
+                        "camera.camera_an_ninh_camera_feed"
+                      ]
+                    }
+                  },
+                  "running_script": false
+                }
+              }
+            ],
+            "action/1": [
+              {
+                "path": "action/1",
+                "timestamp": "2026-01-05T03:32:32.918769+00:00",
+                "result": {
+                  "delay": 20.0,
+                  "done": true
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1767350518824",
+            "alias": "Ch\u1ee5p \u1ea3nh khi ph\u00e1t hi\u1ec7n chuy\u1ec3n \u0111\u1ed9ng",
+            "description": "",
+            "triggers": [
+              {
+                "type": "motion",
+                "device_id": "a169fa3454dca77467c7a1828beb8e50",
+                "entity_id": "a2dd3c8fef6893695289092c5d1c44c9",
+                "domain": "binary_sensor",
+                "trigger": "device",
+                "for": {
+                  "hours": 0,
+                  "minutes": 0,
+                  "seconds": 2
+                }
+              }
+            ],
+            "conditions": [],
+            "actions": [
+              {
+                "action": "camera.snapshot",
+                "metadata": {},
+                "data": {
+                  "filename": "/media/local/detect_human/snapshot_trom_{{ now().strftime('%Y%m%d-%H%M%S') }}.jpg"
+                },
+                "target": {
+                  "entity_id": "camera.camera_an_ninh_camera_feed"
+                }
+              },
+              {
+                "delay": {
+                  "hours": 0,
+                  "minutes": 0,
+                  "seconds": 20,
+                  "milliseconds": 0
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01KE63DC0N32N0F7K6KNJKH8GQ",
+            "parent_id": "01KE63DA23XVTCJMX73YKRESQT",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/1",
+          "run_id": "e9908d3fc2fb54df11e89e03da3731ee",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2026-01-05T03:32:32.917780+00:00",
+            "finish": "2026-01-05T03:32:52.921681+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1767350518824",
+          "trigger": "state of binary_sensor.smart_home_esp8266_motion"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "trigger/0",
+          "run_id": "c1e4d9e50b2cb4b4a903d76c467c01c4",
+          "state": "stopped",
+          "script_execution": "failed_single",
+          "timestamp": {
+            "start": "2026-01-05T03:32:43.876453+00:00",
+            "finish": "2026-01-05T03:32:43.876866+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1767350518824",
+          "trigger": "state of binary_sensor.smart_home_esp8266_motion",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2026-01-05T03:32:43.876485+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.camera_an_ninh",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1767350518824",
+                      "last_triggered": "2026-01-05T03:32:32.917903+00:00",
+                      "mode": "single",
+                      "current": 1,
+                      "friendly_name": "Ch\u1ee5p \u1ea3nh khi ph\u00e1t hi\u1ec7n chuy\u1ec3n \u0111\u1ed9ng"
+                    },
+                    "last_changed": "2026-01-05T03:21:00.966071+00:00",
+                    "last_reported": "2026-01-05T03:32:32.918949+00:00",
+                    "last_updated": "2026-01-05T03:32:32.917936+00:00",
+                    "context": {
+                      "id": "01KE63DC0N32N0F7K6KNJKH8GQ",
+                      "parent_id": "01KE63DA23XVTCJMX73YKRESQT",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "device",
+                    "entity_id": "binary_sensor.smart_home_esp8266_motion",
+                    "from_state": {
+                      "entity_id": "binary_sensor.smart_home_esp8266_motion",
+                      "state": "off",
+                      "attributes": {
+                        "device_class": "motion",
+                        "friendly_name": "Smart Home ESP8266 Motion"
+                      },
+                      "last_changed": "2026-01-05T03:32:37.368718+00:00",
+                      "last_reported": "2026-01-05T03:32:37.368718+00:00",
+                      "last_updated": "2026-01-05T03:32:37.368718+00:00",
+                      "context": {
+                        "id": "01KE63DGBR34A646YTW57QR9CW",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "binary_sensor.smart_home_esp8266_motion",
+                      "state": "on",
+                      "attributes": {
+                        "device_class": "motion",
+                        "friendly_name": "Smart Home ESP8266 Motion"
+                      },
+                      "last_changed": "2026-01-05T03:32:41.874611+00:00",
+                      "last_reported": "2026-01-05T03:32:41.874611+00:00",
+                      "last_updated": "2026-01-05T03:32:41.874611+00:00",
+                      "context": {
+                        "id": "01KE63DMRJAKEHMWXGBVGPWYM7",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "for": {
+                      "__type": "<class 'datetime.timedelta'>",
+                      "total_seconds": 2.0
+                    },
+                    "attribute": null,
+                    "description": "state of binary_sensor.smart_home_esp8266_motion"
+                  }
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1767350518824",
+            "alias": "Ch\u1ee5p \u1ea3nh khi ph\u00e1t hi\u1ec7n chuy\u1ec3n \u0111\u1ed9ng",
+            "description": "",
+            "triggers": [
+              {
+                "type": "motion",
+                "device_id": "a169fa3454dca77467c7a1828beb8e50",
+                "entity_id": "a2dd3c8fef6893695289092c5d1c44c9",
+                "domain": "binary_sensor",
+                "trigger": "device",
+                "for": {
+                  "hours": 0,
+                  "minutes": 0,
+                  "seconds": 2
+                }
+              }
+            ],
+            "conditions": [],
+            "actions": [
+              {
+                "action": "camera.snapshot",
+                "metadata": {},
+                "data": {
+                  "filename": "/media/local/detect_human/snapshot_trom_{{ now().strftime('%Y%m%d-%H%M%S') }}.jpg"
+                },
+                "target": {
+                  "entity_id": "camera.camera_an_ninh_camera_feed"
+                }
+              },
+              {
+                "delay": {
+                  "hours": 0,
+                  "minutes": 0,
+                  "seconds": 20,
+                  "milliseconds": 0
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01KE63DPQ4ZBSBVQWSSRP6MEZ2",
+            "parent_id": "01KE63DMRJAKEHMWXGBVGPWYM7",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "trigger/0",
+          "run_id": "c1e4d9e50b2cb4b4a903d76c467c01c4",
+          "state": "stopped",
+          "script_execution": "failed_single",
+          "timestamp": {
+            "start": "2026-01-05T03:32:43.876453+00:00",
+            "finish": "2026-01-05T03:32:43.876866+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1767350518824",
+          "trigger": "state of binary_sensor.smart_home_esp8266_motion"
+        }
+      }
+    ],
+    "automation.1767352073231": [
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "e80f52c4d714907a7fe2ac04508fa968",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2026-01-05T03:30:57.454448+00:00",
+            "finish": "2026-01-05T03:30:57.459677+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1767352073231",
+          "trigger": "numeric state of sensor.smart_home_esp8266_temperature",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2026-01-05T03:30:57.454520+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.tat_bao_chay_khi_nd_da_an_toan",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1767352073231",
+                      "last_triggered": "2026-01-04T08:46:47.954160+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "T\u1eaft b\u00e1o \u0111\u1ed9ng khi N\u0110/\u0110A an to\u00e0n"
+                    },
+                    "last_changed": "2026-01-05T03:21:00.966146+00:00",
+                    "last_reported": "2026-01-05T03:21:00.966146+00:00",
+                    "last_updated": "2026-01-05T03:21:00.966146+00:00",
+                    "context": {
+                      "id": "01KE62R896VF76FY4XFZ3KPF81",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "numeric_state",
+                    "entity_id": "sensor.smart_home_esp8266_temperature",
+                    "below": 44.0,
+                    "above": null,
+                    "from_state": {
+                      "entity_id": "sensor.smart_home_esp8266_temperature",
+                      "state": "unavailable",
+                      "attributes": {
+                        "state_class": "measurement",
+                        "unit_of_measurement": "\u00b0C",
+                        "device_class": "temperature",
+                        "friendly_name": "Smart Home ESP8266 Temperature"
+                      },
+                      "last_changed": "2026-01-05T03:21:05.967068+00:00",
+                      "last_reported": "2026-01-05T03:30:21.839885+00:00",
+                      "last_updated": "2026-01-05T03:30:21.839885+00:00",
+                      "context": {
+                        "id": "01KE639C0FCHCBRQEHWBTZCQ34",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "sensor.smart_home_esp8266_temperature",
+                      "state": "27.40",
+                      "attributes": {
+                        "state_class": "measurement",
+                        "unit_of_measurement": "\u00b0C",
+                        "device_class": "temperature",
+                        "friendly_name": "Smart Home ESP8266 Temperature"
+                      },
+                      "last_changed": "2026-01-05T03:30:55.452887+00:00",
+                      "last_reported": "2026-01-05T03:30:55.452887+00:00",
+                      "last_updated": "2026-01-05T03:30:55.452887+00:00",
+                      "context": {
+                        "id": "01KE63ACTW8J449P7ZXN815854",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "for": {
+                      "__type": "<class 'datetime.timedelta'>",
+                      "total_seconds": 2.0
+                    },
+                    "description": "numeric state of sensor.smart_home_esp8266_temperature"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2026-01-05T03:30:57.455350+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01KE63AESERS16N7VSNH5D5BHC",
+                    "parent_id": "01KE63ACTW8J449P7ZXN815854",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "switch",
+                    "service": "turn_off",
+                    "service_data": {},
+                    "target": {
+                      "entity_id": [
+                        "switch.smart_home_esp8266_buzzer"
+                      ]
+                    }
+                  },
+                  "running_script": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1767352073231",
+            "alias": "T\u1eaft b\u00e1o \u0111\u1ed9ng khi N\u0110/\u0110A an to\u00e0n",
+            "description": "",
+            "triggers": [
+              {
+                "trigger": "numeric_state",
+                "entity_id": [
+                  "sensor.smart_home_esp8266_temperature"
+                ],
+                "for": {
+                  "hours": 0,
+                  "minutes": 0,
+                  "seconds": 2
+                },
+                "below": 44
+              },
+              {
+                "trigger": "numeric_state",
+                "entity_id": [
+                  "sensor.smart_home_esp8266_humidity"
+                ],
+                "for": {
+                  "hours": 0,
+                  "minutes": 0,
+                  "seconds": 2
+                },
+                "below": 79
+              }
+            ],
+            "conditions": [],
+            "actions": [
+              {
+                "action": "switch.turn_off",
+                "metadata": {},
+                "target": {
+                  "entity_id": "switch.smart_home_esp8266_buzzer"
+                },
+                "data": {}
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01KE63AESERS16N7VSNH5D5BHC",
+            "parent_id": "01KE63ACTW8J449P7ZXN815854",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "e80f52c4d714907a7fe2ac04508fa968",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2026-01-05T03:30:57.454448+00:00",
+            "finish": "2026-01-05T03:30:57.459677+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1767352073231",
+          "trigger": "numeric state of sensor.smart_home_esp8266_temperature"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "trigger/1",
+          "run_id": "27d76c45916478d0c4bb41888a955a2b",
+          "state": "stopped",
+          "script_execution": "failed_single",
+          "timestamp": {
+            "start": "2026-01-05T03:30:57.457441+00:00",
+            "finish": "2026-01-05T03:30:57.457903+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1767352073231",
+          "trigger": "numeric state of sensor.smart_home_esp8266_humidity",
+          "trace": {
+            "trigger/1": [
+              {
+                "path": "trigger/1",
+                "timestamp": "2026-01-05T03:30:57.457493+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.tat_bao_chay_khi_nd_da_an_toan",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1767352073231",
+                      "last_triggered": "2026-01-05T03:30:57.455022+00:00",
+                      "mode": "single",
+                      "current": 1,
+                      "friendly_name": "T\u1eaft b\u00e1o \u0111\u1ed9ng khi N\u0110/\u0110A an to\u00e0n"
+                    },
+                    "last_changed": "2026-01-05T03:21:00.966146+00:00",
+                    "last_reported": "2026-01-05T03:30:57.455111+00:00",
+                    "last_updated": "2026-01-05T03:30:57.455111+00:00",
+                    "context": {
+                      "id": "01KE63AESERS16N7VSNH5D5BHC",
+                      "parent_id": "01KE63ACTW8J449P7ZXN815854",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "1",
+                    "idx": "1",
+                    "alias": null,
+                    "platform": "numeric_state",
+                    "entity_id": "sensor.smart_home_esp8266_humidity",
+                    "below": 79.0,
+                    "above": null,
+                    "from_state": {
+                      "entity_id": "sensor.smart_home_esp8266_humidity",
+                      "state": "unavailable",
+                      "attributes": {
+                        "state_class": "measurement",
+                        "unit_of_measurement": "%",
+                        "device_class": "humidity",
+                        "friendly_name": "Smart Home ESP8266 Humidity"
+                      },
+                      "last_changed": "2026-01-05T03:21:05.967112+00:00",
+                      "last_reported": "2026-01-05T03:30:21.842013+00:00",
+                      "last_updated": "2026-01-05T03:30:21.842013+00:00",
+                      "context": {
+                        "id": "01KE639C0JV7VFMEGMJ5R508D0",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "sensor.smart_home_esp8266_humidity",
+                      "state": "62.20",
+                      "attributes": {
+                        "state_class": "measurement",
+                        "unit_of_measurement": "%",
+                        "device_class": "humidity",
+                        "friendly_name": "Smart Home ESP8266 Humidity"
+                      },
+                      "last_changed": "2026-01-05T03:30:55.453960+00:00",
+                      "last_reported": "2026-01-05T03:30:55.453960+00:00",
+                      "last_updated": "2026-01-05T03:30:55.453960+00:00",
+                      "context": {
+                        "id": "01KE63ACTXYQCR305QTRMZXXXM",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "for": {
+                      "__type": "<class 'datetime.timedelta'>",
+                      "total_seconds": 2.0
+                    },
+                    "description": "numeric state of sensor.smart_home_esp8266_humidity"
+                  }
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1767352073231",
+            "alias": "T\u1eaft b\u00e1o \u0111\u1ed9ng khi N\u0110/\u0110A an to\u00e0n",
+            "description": "",
+            "triggers": [
+              {
+                "trigger": "numeric_state",
+                "entity_id": [
+                  "sensor.smart_home_esp8266_temperature"
+                ],
+                "for": {
+                  "hours": 0,
+                  "minutes": 0,
+                  "seconds": 2
+                },
+                "below": 44
+              },
+              {
+                "trigger": "numeric_state",
+                "entity_id": [
+                  "sensor.smart_home_esp8266_humidity"
+                ],
+                "for": {
+                  "hours": 0,
+                  "minutes": 0,
+                  "seconds": 2
+                },
+                "below": 79
+              }
+            ],
+            "conditions": [],
+            "actions": [
+              {
+                "action": "switch.turn_off",
+                "metadata": {},
+                "target": {
+                  "entity_id": "switch.smart_home_esp8266_buzzer"
+                },
+                "data": {}
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01KE63AESH5JXM914T8PG27Q59",
+            "parent_id": "01KE63ACTXYQCR305QTRMZXXXM",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "trigger/1",
+          "run_id": "27d76c45916478d0c4bb41888a955a2b",
+          "state": "stopped",
+          "script_execution": "failed_single",
+          "timestamp": {
+            "start": "2026-01-05T03:30:57.457441+00:00",
+            "finish": "2026-01-05T03:30:57.457903+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1767352073231",
+          "trigger": "numeric state of sensor.smart_home_esp8266_humidity"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "9eda9ce88f92baec161a312f9b298bdb",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2026-01-05T03:32:00.520012+00:00",
+            "finish": "2026-01-05T03:32:00.524514+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1767352073231",
+          "trigger": "numeric state of sensor.smart_home_esp8266_humidity",
+          "trace": {
+            "trigger/1": [
+              {
+                "path": "trigger/1",
+                "timestamp": "2026-01-05T03:32:00.520081+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.tat_bao_chay_khi_nd_da_an_toan",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1767352073231",
+                      "last_triggered": "2026-01-05T03:30:57.455022+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "T\u1eaft b\u00e1o \u0111\u1ed9ng khi N\u0110/\u0110A an to\u00e0n"
+                    },
+                    "last_changed": "2026-01-05T03:21:00.966146+00:00",
+                    "last_reported": "2026-01-05T03:30:57.459129+00:00",
+                    "last_updated": "2026-01-05T03:30:57.459129+00:00",
+                    "context": {
+                      "id": "01KE63AESH5JXM914T8PG27Q59",
+                      "parent_id": "01KE63ACTXYQCR305QTRMZXXXM",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "1",
+                    "idx": "1",
+                    "alias": null,
+                    "platform": "numeric_state",
+                    "entity_id": "sensor.smart_home_esp8266_humidity",
+                    "below": 79.0,
+                    "above": null,
+                    "from_state": {
+                      "entity_id": "sensor.smart_home_esp8266_humidity",
+                      "state": "81.00",
+                      "attributes": {
+                        "state_class": "measurement",
+                        "unit_of_measurement": "%",
+                        "device_class": "humidity",
+                        "friendly_name": "Smart Home ESP8266 Humidity"
+                      },
+                      "last_changed": "2026-01-05T03:31:55.689777+00:00",
+                      "last_reported": "2026-01-05T03:31:55.689777+00:00",
+                      "last_updated": "2026-01-05T03:31:55.689777+00:00",
+                      "context": {
+                        "id": "01KE63C7N9Y4G3Q8C5WFXR9AT5",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "sensor.smart_home_esp8266_humidity",
+                      "state": "76.70",
+                      "attributes": {
+                        "state_class": "measurement",
+                        "unit_of_measurement": "%",
+                        "device_class": "humidity",
+                        "friendly_name": "Smart Home ESP8266 Humidity"
+                      },
+                      "last_changed": "2026-01-05T03:31:58.518579+00:00",
+                      "last_reported": "2026-01-05T03:31:58.518579+00:00",
+                      "last_updated": "2026-01-05T03:31:58.518579+00:00",
+                      "context": {
+                        "id": "01KE63CADPQP8G71V1RP2E2NFP",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "for": {
+                      "__type": "<class 'datetime.timedelta'>",
+                      "total_seconds": 2.0
+                    },
+                    "description": "numeric state of sensor.smart_home_esp8266_humidity"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2026-01-05T03:32:00.520513+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01KE63CCC70F6ZVJZ60W023BCT",
+                    "parent_id": "01KE63CADPQP8G71V1RP2E2NFP",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "switch",
+                    "service": "turn_off",
+                    "service_data": {},
+                    "target": {
+                      "entity_id": [
+                        "switch.smart_home_esp8266_buzzer"
+                      ]
+                    }
+                  },
+                  "running_script": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1767352073231",
+            "alias": "T\u1eaft b\u00e1o \u0111\u1ed9ng khi N\u0110/\u0110A an to\u00e0n",
+            "description": "",
+            "triggers": [
+              {
+                "trigger": "numeric_state",
+                "entity_id": [
+                  "sensor.smart_home_esp8266_temperature"
+                ],
+                "for": {
+                  "hours": 0,
+                  "minutes": 0,
+                  "seconds": 2
+                },
+                "below": 44
+              },
+              {
+                "trigger": "numeric_state",
+                "entity_id": [
+                  "sensor.smart_home_esp8266_humidity"
+                ],
+                "for": {
+                  "hours": 0,
+                  "minutes": 0,
+                  "seconds": 2
+                },
+                "below": 79
+              }
+            ],
+            "conditions": [],
+            "actions": [
+              {
+                "action": "switch.turn_off",
+                "metadata": {},
+                "target": {
+                  "entity_id": "switch.smart_home_esp8266_buzzer"
+                },
+                "data": {}
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01KE63CCC70F6ZVJZ60W023BCT",
+            "parent_id": "01KE63CADPQP8G71V1RP2E2NFP",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "9eda9ce88f92baec161a312f9b298bdb",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2026-01-05T03:32:00.520012+00:00",
+            "finish": "2026-01-05T03:32:00.524514+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1767352073231",
+          "trigger": "numeric state of sensor.smart_home_esp8266_humidity"
+        }
+      }
+    ],
+    "automation.1767352345317": [
+      {
+        "extended_dict": {
+          "last_step": "action/1",
+          "run_id": "10c75fab1d4c1141534bdd8dcd2280e8",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2026-01-05T03:31:15.428069+00:00",
+            "finish": "2026-01-05T03:33:12.582158+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1767352345317",
+          "trigger": "numeric state of sensor.smart_home_esp8266_temperature",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2026-01-05T03:31:15.428113+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.chup_anh_khi_coi_keu",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1767352345317",
+                      "last_triggered": "2026-01-04T08:45:29.768193+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Ch\u1ee5p \u1ea3nh khi c\u00f3 t\u00edn hi\u1ec7u ch\u00e1y"
+                    },
+                    "last_changed": "2026-01-05T03:21:00.966218+00:00",
+                    "last_reported": "2026-01-05T03:21:00.966218+00:00",
+                    "last_updated": "2026-01-05T03:21:00.966218+00:00",
+                    "context": {
+                      "id": "01KE62R896XPBQ3ZX2JXH4RCC5",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "numeric_state",
+                    "entity_id": "sensor.smart_home_esp8266_temperature",
+                    "below": null,
+                    "above": 28.0,
+                    "from_state": {
+                      "entity_id": "sensor.smart_home_esp8266_temperature",
+                      "state": "27.70",
+                      "attributes": {
+                        "state_class": "measurement",
+                        "unit_of_measurement": "\u00b0C",
+                        "device_class": "temperature",
+                        "friendly_name": "Smart Home ESP8266 Temperature"
+                      },
+                      "last_changed": "2026-01-05T03:30:58.421791+00:00",
+                      "last_reported": "2026-01-05T03:30:58.421791+00:00",
+                      "last_updated": "2026-01-05T03:30:58.421791+00:00",
+                      "context": {
+                        "id": "01KE63AFQN3YNMCCB06PMCS59N",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "sensor.smart_home_esp8266_temperature",
+                      "state": "29.50",
+                      "attributes": {
+                        "state_class": "measurement",
+                        "unit_of_measurement": "\u00b0C",
+                        "device_class": "temperature",
+                        "friendly_name": "Smart Home ESP8266 Temperature"
+                      },
+                      "last_changed": "2026-01-05T03:31:13.426942+00:00",
+                      "last_reported": "2026-01-05T03:31:13.426942+00:00",
+                      "last_updated": "2026-01-05T03:31:13.426942+00:00",
+                      "context": {
+                        "id": "01KE63AYCJY5ZMJVK4YK4CVQNJ",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "for": {
+                      "__type": "<class 'datetime.timedelta'>",
+                      "total_seconds": 2.0
+                    },
+                    "description": "numeric state of sensor.smart_home_esp8266_temperature"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2026-01-05T03:31:15.428490+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01KE63B0B47BY2VVB4RKJT17BX",
+                    "parent_id": "01KE63AYCJY5ZMJVK4YK4CVQNJ",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "camera",
+                    "service": "snapshot",
+                    "service_data": {
+                      "filename": "/media/local/chay/snapshot_chay_20260105-103115.jpg",
+                      "entity_id": [
+                        "camera.camera_an_ninh_camera_feed"
+                      ]
+                    },
+                    "target": {
+                      "entity_id": [
+                        "camera.camera_an_ninh_camera_feed"
+                      ]
+                    }
+                  },
+                  "running_script": false
+                }
+              }
+            ],
+            "action/1": [
+              {
+                "path": "action/1",
+                "timestamp": "2026-01-05T03:31:15.429287+00:00",
+                "result": {
+                  "delay": 180.0,
+                  "done": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1767352345317",
+            "alias": "Ch\u1ee5p \u1ea3nh khi c\u00f3 t\u00edn hi\u1ec7u ch\u00e1y",
+            "description": "",
+            "triggers": [
+              {
+                "trigger": "numeric_state",
+                "entity_id": [
+                  "sensor.smart_home_esp8266_temperature"
+                ],
+                "for": {
+                  "hours": 0,
+                  "minutes": 0,
+                  "seconds": 2
+                },
+                "above": 28
+              },
+              {
+                "trigger": "numeric_state",
+                "entity_id": [
+                  "sensor.smart_home_esp8266_humidity"
+                ],
+                "for": {
+                  "hours": 0,
+                  "minutes": 0,
+                  "seconds": 2
+                },
+                "above": 80
+              }
+            ],
+            "conditions": [],
+            "actions": [
+              {
+                "action": "camera.snapshot",
+                "metadata": {},
+                "target": {
+                  "entity_id": "camera.camera_an_ninh_camera_feed"
+                },
+                "data": {
+                  "filename": "/media/local/chay/snapshot_chay_{{ now().strftime('%Y%m%d-%H%M%S') }}.jpg"
+                }
+              },
+              {
+                "delay": {
+                  "hours": 0,
+                  "minutes": 3,
+                  "seconds": 0,
+                  "milliseconds": 0
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01KE63B0B47BY2VVB4RKJT17BX",
+            "parent_id": "01KE63AYCJY5ZMJVK4YK4CVQNJ",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/1",
+          "run_id": "10c75fab1d4c1141534bdd8dcd2280e8",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2026-01-05T03:31:15.428069+00:00",
+            "finish": "2026-01-05T03:33:12.582158+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1767352345317",
+          "trigger": "numeric state of sensor.smart_home_esp8266_temperature"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "trigger/1",
+          "run_id": "9628e448ffb9050bc33e8dfba87781ff",
+          "state": "stopped",
+          "script_execution": "failed_single",
+          "timestamp": {
+            "start": "2026-01-05T03:31:15.491641+00:00",
+            "finish": "2026-01-05T03:31:15.492165+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1767352345317",
+          "trigger": "numeric state of sensor.smart_home_esp8266_humidity",
+          "trace": {
+            "trigger/1": [
+              {
+                "path": "trigger/1",
+                "timestamp": "2026-01-05T03:31:15.491735+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.chup_anh_khi_coi_keu",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1767352345317",
+                      "last_triggered": "2026-01-05T03:31:15.428251+00:00",
+                      "mode": "single",
+                      "current": 1,
+                      "friendly_name": "Ch\u1ee5p \u1ea3nh khi c\u00f3 t\u00edn hi\u1ec7u ch\u00e1y"
+                    },
+                    "last_changed": "2026-01-05T03:21:00.966218+00:00",
+                    "last_reported": "2026-01-05T03:31:15.429478+00:00",
+                    "last_updated": "2026-01-05T03:31:15.428303+00:00",
+                    "context": {
+                      "id": "01KE63B0B47BY2VVB4RKJT17BX",
+                      "parent_id": "01KE63AYCJY5ZMJVK4YK4CVQNJ",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "1",
+                    "idx": "1",
+                    "alias": null,
+                    "platform": "numeric_state",
+                    "entity_id": "sensor.smart_home_esp8266_humidity",
+                    "below": null,
+                    "above": 80.0,
+                    "from_state": {
+                      "entity_id": "sensor.smart_home_esp8266_humidity",
+                      "state": "66.80",
+                      "attributes": {
+                        "state_class": "measurement",
+                        "unit_of_measurement": "%",
+                        "device_class": "humidity",
+                        "friendly_name": "Smart Home ESP8266 Humidity"
+                      },
+                      "last_changed": "2026-01-05T03:30:58.470038+00:00",
+                      "last_reported": "2026-01-05T03:30:58.470038+00:00",
+                      "last_updated": "2026-01-05T03:30:58.470038+00:00",
+                      "context": {
+                        "id": "01KE63AFS6W6RJRAWMWCCCB444",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "sensor.smart_home_esp8266_humidity",
+                      "state": "95.00",
+                      "attributes": {
+                        "state_class": "measurement",
+                        "unit_of_measurement": "%",
+                        "device_class": "humidity",
+                        "friendly_name": "Smart Home ESP8266 Humidity"
+                      },
+                      "last_changed": "2026-01-05T03:31:13.490793+00:00",
+                      "last_reported": "2026-01-05T03:31:13.490793+00:00",
+                      "last_updated": "2026-01-05T03:31:13.490793+00:00",
+                      "context": {
+                        "id": "01KE63AYEJX06C4K684P7R3QN6",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "for": {
+                      "__type": "<class 'datetime.timedelta'>",
+                      "total_seconds": 2.0
+                    },
+                    "description": "numeric state of sensor.smart_home_esp8266_humidity"
+                  }
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1767352345317",
+            "alias": "Ch\u1ee5p \u1ea3nh khi c\u00f3 t\u00edn hi\u1ec7u ch\u00e1y",
+            "description": "",
+            "triggers": [
+              {
+                "trigger": "numeric_state",
+                "entity_id": [
+                  "sensor.smart_home_esp8266_temperature"
+                ],
+                "for": {
+                  "hours": 0,
+                  "minutes": 0,
+                  "seconds": 2
+                },
+                "above": 28
+              },
+              {
+                "trigger": "numeric_state",
+                "entity_id": [
+                  "sensor.smart_home_esp8266_humidity"
+                ],
+                "for": {
+                  "hours": 0,
+                  "minutes": 0,
+                  "seconds": 2
+                },
+                "above": 80
+              }
+            ],
+            "conditions": [],
+            "actions": [
+              {
+                "action": "camera.snapshot",
+                "metadata": {},
+                "target": {
+                  "entity_id": "camera.camera_an_ninh_camera_feed"
+                },
+                "data": {
+                  "filename": "/media/local/chay/snapshot_chay_{{ now().strftime('%Y%m%d-%H%M%S') }}.jpg"
+                }
+              },
+              {
+                "delay": {
+                  "hours": 0,
+                  "minutes": 3,
+                  "seconds": 0,
+                  "milliseconds": 0
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01KE63B0D3YPYF8DWRG5K84TXW",
+            "parent_id": "01KE63AYEJX06C4K684P7R3QN6",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "trigger/1",
+          "run_id": "9628e448ffb9050bc33e8dfba87781ff",
+          "state": "stopped",
+          "script_execution": "failed_single",
+          "timestamp": {
+            "start": "2026-01-05T03:31:15.491641+00:00",
+            "finish": "2026-01-05T03:31:15.492165+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1767352345317",
+          "trigger": "numeric state of sensor.smart_home_esp8266_humidity"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "trigger/1",
+          "run_id": "13ffba8ef781cc13ac618b6c2f2a7425",
+          "state": "stopped",
+          "script_execution": "failed_single",
+          "timestamp": {
+            "start": "2026-01-05T03:33:00.877719+00:00",
+            "finish": "2026-01-05T03:33:00.878191+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1767352345317",
+          "trigger": "numeric state of sensor.smart_home_esp8266_humidity",
+          "trace": {
+            "trigger/1": [
+              {
+                "path": "trigger/1",
+                "timestamp": "2026-01-05T03:33:00.877758+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.chup_anh_khi_coi_keu",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1767352345317",
+                      "last_triggered": "2026-01-05T03:31:15.428251+00:00",
+                      "mode": "single",
+                      "current": 1,
+                      "friendly_name": "Ch\u1ee5p \u1ea3nh khi c\u00f3 t\u00edn hi\u1ec7u ch\u00e1y"
+                    },
+                    "last_changed": "2026-01-05T03:21:00.966218+00:00",
+                    "last_reported": "2026-01-05T03:31:15.429478+00:00",
+                    "last_updated": "2026-01-05T03:31:15.428303+00:00",
+                    "context": {
+                      "id": "01KE63B0B47BY2VVB4RKJT17BX",
+                      "parent_id": "01KE63AYCJY5ZMJVK4YK4CVQNJ",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "1",
+                    "idx": "1",
+                    "alias": null,
+                    "platform": "numeric_state",
+                    "entity_id": "sensor.smart_home_esp8266_humidity",
+                    "below": null,
+                    "above": 80.0,
+                    "from_state": {
+                      "entity_id": "sensor.smart_home_esp8266_humidity",
+                      "state": "69.10",
+                      "attributes": {
+                        "state_class": "measurement",
+                        "unit_of_measurement": "%",
+                        "device_class": "humidity",
+                        "friendly_name": "Smart Home ESP8266 Humidity"
+                      },
+                      "last_changed": "2026-01-05T03:32:45.358613+00:00",
+                      "last_reported": "2026-01-05T03:32:45.358613+00:00",
+                      "last_updated": "2026-01-05T03:32:45.358613+00:00",
+                      "context": {
+                        "id": "01KE63DR5ECB6C3VZQ7J5T77PG",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "sensor.smart_home_esp8266_humidity",
+                      "state": "95.00",
+                      "attributes": {
+                        "state_class": "measurement",
+                        "unit_of_measurement": "%",
+                        "device_class": "humidity",
+                        "friendly_name": "Smart Home ESP8266 Humidity"
+                      },
+                      "last_changed": "2026-01-05T03:32:58.875389+00:00",
+                      "last_reported": "2026-01-05T03:32:58.875389+00:00",
+                      "last_updated": "2026-01-05T03:32:58.875389+00:00",
+                      "context": {
+                        "id": "01KE63E5BVE2D7BA113C5A48M8",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "for": {
+                      "__type": "<class 'datetime.timedelta'>",
+                      "total_seconds": 2.0
+                    },
+                    "description": "numeric state of sensor.smart_home_esp8266_humidity"
+                  }
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1767352345317",
+            "alias": "Ch\u1ee5p \u1ea3nh khi c\u00f3 t\u00edn hi\u1ec7u ch\u00e1y",
+            "description": "",
+            "triggers": [
+              {
+                "trigger": "numeric_state",
+                "entity_id": [
+                  "sensor.smart_home_esp8266_temperature"
+                ],
+                "for": {
+                  "hours": 0,
+                  "minutes": 0,
+                  "seconds": 2
+                },
+                "above": 28
+              },
+              {
+                "trigger": "numeric_state",
+                "entity_id": [
+                  "sensor.smart_home_esp8266_humidity"
+                ],
+                "for": {
+                  "hours": 0,
+                  "minutes": 0,
+                  "seconds": 2
+                },
+                "above": 80
+              }
+            ],
+            "conditions": [],
+            "actions": [
+              {
+                "action": "camera.snapshot",
+                "metadata": {},
+                "target": {
+                  "entity_id": "camera.camera_an_ninh_camera_feed"
+                },
+                "data": {
+                  "filename": "/media/local/chay/snapshot_chay_{{ now().strftime('%Y%m%d-%H%M%S') }}.jpg"
+                }
+              },
+              {
+                "delay": {
+                  "hours": 0,
+                  "minutes": 3,
+                  "seconds": 0,
+                  "milliseconds": 0
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01KE63E7ADTB32F26QJ9K9VKC1",
+            "parent_id": "01KE63E5BVE2D7BA113C5A48M8",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "trigger/1",
+          "run_id": "13ffba8ef781cc13ac618b6c2f2a7425",
+          "state": "stopped",
+          "script_execution": "failed_single",
+          "timestamp": {
+            "start": "2026-01-05T03:33:00.877719+00:00",
+            "finish": "2026-01-05T03:33:00.878191+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1767352345317",
+          "trigger": "numeric state of sensor.smart_home_esp8266_humidity"
+        }
+      }
+    ],
+    "automation.1767028620670": [
+      {
+        "extended_dict": {
+          "last_step": "action/1",
+          "run_id": "0260ce7bb4db147c30f382bb6ea3a2d0",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2026-01-05T03:31:15.492336+00:00",
+            "finish": "2026-01-05T03:31:22.206153+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1767028620670",
+          "trigger": "numeric state of sensor.smart_home_esp8266_humidity",
+          "trace": {
+            "trigger/1": [
+              {
+                "path": "trigger/1",
+                "timestamp": "2026-01-05T03:31:15.492374+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.bao_chay_khi_nhiet_do_30_trong_30s",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1767028620670",
+                      "last_triggered": "2026-01-04T08:45:29.971667+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "B\u1eadt b\u00e1o \u0111\u1ed9ng khi N\u0110/\u0110A v\u01b0\u1ee3t ng\u01b0\u1ee1ng"
+                    },
+                    "last_changed": "2026-01-05T03:28:47.365717+00:00",
+                    "last_reported": "2026-01-05T03:28:47.365717+00:00",
+                    "last_updated": "2026-01-05T03:28:47.365717+00:00",
+                    "context": {
+                      "id": "01KE636FR5A68YVCPYAW6JS7Z0",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "1",
+                    "idx": "1",
+                    "alias": null,
+                    "platform": "numeric_state",
+                    "entity_id": "sensor.smart_home_esp8266_humidity",
+                    "below": null,
+                    "above": 80.0,
+                    "from_state": {
+                      "entity_id": "sensor.smart_home_esp8266_humidity",
+                      "state": "66.80",
+                      "attributes": {
+                        "state_class": "measurement",
+                        "unit_of_measurement": "%",
+                        "device_class": "humidity",
+                        "friendly_name": "Smart Home ESP8266 Humidity"
+                      },
+                      "last_changed": "2026-01-05T03:30:58.470038+00:00",
+                      "last_reported": "2026-01-05T03:30:58.470038+00:00",
+                      "last_updated": "2026-01-05T03:30:58.470038+00:00",
+                      "context": {
+                        "id": "01KE63AFS6W6RJRAWMWCCCB444",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "sensor.smart_home_esp8266_humidity",
+                      "state": "95.00",
+                      "attributes": {
+                        "state_class": "measurement",
+                        "unit_of_measurement": "%",
+                        "device_class": "humidity",
+                        "friendly_name": "Smart Home ESP8266 Humidity"
+                      },
+                      "last_changed": "2026-01-05T03:31:13.490793+00:00",
+                      "last_reported": "2026-01-05T03:31:13.490793+00:00",
+                      "last_updated": "2026-01-05T03:31:13.490793+00:00",
+                      "context": {
+                        "id": "01KE63AYEJX06C4K684P7R3QN6",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "for": {
+                      "__type": "<class 'datetime.timedelta'>",
+                      "total_seconds": 2.0
+                    },
+                    "description": "numeric state of sensor.smart_home_esp8266_humidity"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2026-01-05T03:31:15.492776+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01KE63B0D4F4QD5ZFA9MH22S2T",
+                    "parent_id": "01KE63AYEJX06C4K684P7R3QN6",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "switch",
+                    "service": "turn_on",
+                    "service_data": {},
+                    "target": {
+                      "entity_id": [
+                        "switch.smart_home_esp8266_buzzer"
+                      ]
+                    }
+                  },
+                  "running_script": false
+                }
+              }
+            ],
+            "action/1": [
+              {
+                "path": "action/1",
+                "timestamp": "2026-01-05T03:31:15.495605+00:00",
+                "result": {
+                  "params": {
+                    "domain": "notify",
+                    "service": "mail",
+                    "service_data": {
+                      "message": "H\u1ec7 th\u1ed1ng Nh\u00e0 th\u00f4ng minh Home Assistant xin th\u00f4ng b\u00e1o:  \u26a0\ufe0f PH\u00c1T HI\u1ec6N M\u00d4I TR\u01af\u1edcNG B\u1ea4T TH\u01af\u1edcNG!  \n-------------------------------------------------- \n\ud83c\udf21\ufe0f Nhi\u1ec7t \u0111\u1ed9 hi\u1ec7n t\u1ea1i: 95.00 \u00b0C \n\ud83d\udca7 \u0110\u1ed9 \u1ea9m hi\u1ec7n t\u1ea1i: 95.00 % \n\ud83d\udd52 Th\u1eddi gian ph\u00e1t hi\u1ec7n: 10:31:15 ng\u00e0y 05/01/2026 \n--------------------------------------------------  \nH\u1ec7 th\u1ed1ng t\u1ef1 \u0111\u1ed9ng \u0111\u00e3 th\u1ef1c hi\u1ec7n c\u00e1c h\u00e0nh \u0111\u1ed9ng sau: 1. K\u00edch ho\u1ea1t c\u00f2i b\u00e1o \u0111\u1ed9ng (Buzzer). 2. Camera an ninh \u0111\u00e3 ch\u1ee5p \u1ea3nh hi\u1ec7n tr\u01b0\u1eddng.  Vui l\u00f2ng ki\u1ec3m tra ngay l\u1eadp t\u1ee9c \u0111\u1ec3 \u0111\u1ea3m b\u1ea3o an to\u00e0n!",
+                      "title": "C\u1ea2NH B\u00c1O: Ph\u00e1t hi\u1ec7n nguy c\u01a1 CH\u00c1Y N\u1ed4 t\u1ea1i nh\u00e0"
+                    },
+                    "target": {}
+                  },
+                  "running_script": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1767028620670",
+            "alias": "B\u1eadt b\u00e1o \u0111\u1ed9ng khi N\u0110/\u0110A v\u01b0\u1ee3t ng\u01b0\u1ee1ng",
+            "description": "",
+            "triggers": [
+              {
+                "trigger": "numeric_state",
+                "entity_id": [
+                  "sensor.smart_home_esp8266_temperature"
+                ],
+                "for": {
+                  "hours": 0,
+                  "minutes": 0,
+                  "seconds": 2
+                },
+                "above": 45
+              },
+              {
+                "trigger": "numeric_state",
+                "entity_id": [
+                  "sensor.smart_home_esp8266_humidity"
+                ],
+                "for": {
+                  "hours": 0,
+                  "minutes": 0,
+                  "seconds": 2
+                },
+                "above": 80
+              }
+            ],
+            "conditions": [],
+            "actions": [
+              {
+                "action": "switch.turn_on",
+                "metadata": {},
+                "target": {
+                  "entity_id": "switch.smart_home_esp8266_buzzer"
+                },
+                "data": {}
+              },
+              {
+                "action": "notify.mail",
+                "metadata": {},
+                "data": {
+                  "message": "H\u1ec7 th\u1ed1ng Nh\u00e0 th\u00f4ng minh Home Assistant xin th\u00f4ng b\u00e1o:  \u26a0\ufe0f PH\u00c1T HI\u1ec6N M\u00d4I TR\u01af\u1edcNG B\u1ea4T TH\u01af\u1edcNG!  \n-------------------------------------------------- \n\ud83c\udf21\ufe0f Nhi\u1ec7t \u0111\u1ed9 hi\u1ec7n t\u1ea1i: {{ states('sensor.smart_home_esp8266_humidity') }} \u00b0C \n\ud83d\udca7 \u0110\u1ed9 \u1ea9m hi\u1ec7n t\u1ea1i: {{ states('sensor.smart_home_esp8266_humidity') }} % \n\ud83d\udd52 Th\u1eddi gian ph\u00e1t hi\u1ec7n: {{ now().strftime('%H:%M:%S ng\u00e0y %d/%m/%Y') }} \n--------------------------------------------------  \nH\u1ec7 th\u1ed1ng t\u1ef1 \u0111\u1ed9ng \u0111\u00e3 th\u1ef1c hi\u1ec7n c\u00e1c h\u00e0nh \u0111\u1ed9ng sau: 1. K\u00edch ho\u1ea1t c\u00f2i b\u00e1o \u0111\u1ed9ng (Buzzer). 2. Camera an ninh \u0111\u00e3 ch\u1ee5p \u1ea3nh hi\u1ec7n tr\u01b0\u1eddng.  Vui l\u00f2ng ki\u1ec3m tra ngay l\u1eadp t\u1ee9c \u0111\u1ec3 \u0111\u1ea3m b\u1ea3o an to\u00e0n!",
+                  "title": "C\u1ea2NH B\u00c1O: Ph\u00e1t hi\u1ec7n nguy c\u01a1 CH\u00c1Y N\u1ed4 t\u1ea1i nh\u00e0"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01KE63B0D4F4QD5ZFA9MH22S2T",
+            "parent_id": "01KE63AYEJX06C4K684P7R3QN6",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/1",
+          "run_id": "0260ce7bb4db147c30f382bb6ea3a2d0",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2026-01-05T03:31:15.492336+00:00",
+            "finish": "2026-01-05T03:31:22.206153+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1767028620670",
+          "trigger": "numeric state of sensor.smart_home_esp8266_humidity"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/1",
+          "run_id": "531ba329169766fa738387cc68dc85fe",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2026-01-05T03:33:00.878283+00:00",
+            "finish": "2026-01-05T03:33:04.918584+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1767028620670",
+          "trigger": "numeric state of sensor.smart_home_esp8266_humidity",
+          "trace": {
+            "trigger/1": [
+              {
+                "path": "trigger/1",
+                "timestamp": "2026-01-05T03:33:00.878327+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.bao_chay_khi_nhiet_do_30_trong_30s",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1767028620670",
+                      "last_triggered": "2026-01-05T03:31:15.492473+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "B\u1eadt b\u00e1o \u0111\u1ed9ng khi N\u0110/\u0110A v\u01b0\u1ee3t ng\u01b0\u1ee1ng"
+                    },
+                    "last_changed": "2026-01-05T03:32:47.628966+00:00",
+                    "last_reported": "2026-01-05T03:32:47.628966+00:00",
+                    "last_updated": "2026-01-05T03:32:47.628966+00:00",
+                    "context": {
+                      "id": "01KE63DTCCNMAH5Y0QFX80TSF7",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "1",
+                    "idx": "1",
+                    "alias": null,
+                    "platform": "numeric_state",
+                    "entity_id": "sensor.smart_home_esp8266_humidity",
+                    "below": null,
+                    "above": 80.0,
+                    "from_state": {
+                      "entity_id": "sensor.smart_home_esp8266_humidity",
+                      "state": "69.10",
+                      "attributes": {
+                        "state_class": "measurement",
+                        "unit_of_measurement": "%",
+                        "device_class": "humidity",
+                        "friendly_name": "Smart Home ESP8266 Humidity"
+                      },
+                      "last_changed": "2026-01-05T03:32:45.358613+00:00",
+                      "last_reported": "2026-01-05T03:32:45.358613+00:00",
+                      "last_updated": "2026-01-05T03:32:45.358613+00:00",
+                      "context": {
+                        "id": "01KE63DR5ECB6C3VZQ7J5T77PG",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "sensor.smart_home_esp8266_humidity",
+                      "state": "95.00",
+                      "attributes": {
+                        "state_class": "measurement",
+                        "unit_of_measurement": "%",
+                        "device_class": "humidity",
+                        "friendly_name": "Smart Home ESP8266 Humidity"
+                      },
+                      "last_changed": "2026-01-05T03:32:58.875389+00:00",
+                      "last_reported": "2026-01-05T03:32:58.875389+00:00",
+                      "last_updated": "2026-01-05T03:32:58.875389+00:00",
+                      "context": {
+                        "id": "01KE63E5BVE2D7BA113C5A48M8",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "for": {
+                      "__type": "<class 'datetime.timedelta'>",
+                      "total_seconds": 2.0
+                    },
+                    "description": "numeric state of sensor.smart_home_esp8266_humidity"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2026-01-05T03:33:00.878793+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01KE63E7AEPYP0DTJDCXWNJ3KG",
+                    "parent_id": "01KE63E5BVE2D7BA113C5A48M8",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "switch",
+                    "service": "turn_on",
+                    "service_data": {},
+                    "target": {
+                      "entity_id": [
+                        "switch.smart_home_esp8266_buzzer"
+                      ]
+                    }
+                  },
+                  "running_script": false
+                }
+              }
+            ],
+            "action/1": [
+              {
+                "path": "action/1",
+                "timestamp": "2026-01-05T03:33:00.881414+00:00",
+                "result": {
+                  "params": {
+                    "domain": "notify",
+                    "service": "mail",
+                    "service_data": {
+                      "message": "H\u1ec7 th\u1ed1ng Nh\u00e0 th\u00f4ng minh Home Assistant xin th\u00f4ng b\u00e1o:  \u26a0\ufe0f PH\u00c1T HI\u1ec6N M\u00d4I TR\u01af\u1edcNG B\u1ea4T TH\u01af\u1edcNG!  \n-------------------------------------------------- \n\ud83c\udf21\ufe0f Nhi\u1ec7t \u0111\u1ed9 hi\u1ec7n t\u1ea1i: 29.90 \u00b0C \n\ud83d\udca7 \u0110\u1ed9 \u1ea9m hi\u1ec7n t\u1ea1i: 95.00 % \n\ud83d\udd52 Th\u1eddi gian ph\u00e1t hi\u1ec7n: 10:33:00 ng\u00e0y 05/01/2026 \n--------------------------------------------------  \nH\u1ec7 th\u1ed1ng t\u1ef1 \u0111\u1ed9ng \u0111\u00e3 th\u1ef1c hi\u1ec7n c\u00e1c h\u00e0nh \u0111\u1ed9ng sau: 1. K\u00edch ho\u1ea1t c\u00f2i b\u00e1o \u0111\u1ed9ng (Buzzer). 2. Camera an ninh \u0111\u00e3 ch\u1ee5p \u1ea3nh hi\u1ec7n tr\u01b0\u1eddng.  Vui l\u00f2ng ki\u1ec3m tra ngay l\u1eadp t\u1ee9c \u0111\u1ec3 \u0111\u1ea3m b\u1ea3o an to\u00e0n!",
+                      "title": "C\u1ea2NH B\u00c1O: Ph\u00e1t hi\u1ec7n nguy c\u01a1 CH\u00c1Y N\u1ed4 t\u1ea1i nh\u00e0"
+                    },
+                    "target": {}
+                  },
+                  "running_script": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1767028620670",
+            "alias": "B\u1eadt b\u00e1o \u0111\u1ed9ng khi N\u0110/\u0110A v\u01b0\u1ee3t ng\u01b0\u1ee1ng",
+            "description": "",
+            "triggers": [
+              {
+                "trigger": "numeric_state",
+                "entity_id": [
+                  "sensor.smart_home_esp8266_temperature"
+                ],
+                "for": {
+                  "hours": 0,
+                  "minutes": 0,
+                  "seconds": 2
+                },
+                "above": 45
+              },
+              {
+                "trigger": "numeric_state",
+                "entity_id": [
+                  "sensor.smart_home_esp8266_humidity"
+                ],
+                "for": {
+                  "hours": 0,
+                  "minutes": 0,
+                  "seconds": 2
+                },
+                "above": 80
+              }
+            ],
+            "conditions": [],
+            "actions": [
+              {
+                "action": "switch.turn_on",
+                "metadata": {},
+                "target": {
+                  "entity_id": "switch.smart_home_esp8266_buzzer"
+                },
+                "data": {}
+              },
+              {
+                "action": "notify.mail",
+                "metadata": {},
+                "data": {
+                  "message": "H\u1ec7 th\u1ed1ng Nh\u00e0 th\u00f4ng minh Home Assistant xin th\u00f4ng b\u00e1o:  \u26a0\ufe0f PH\u00c1T HI\u1ec6N M\u00d4I TR\u01af\u1edcNG B\u1ea4T TH\u01af\u1edcNG!  \n-------------------------------------------------- \n\ud83c\udf21\ufe0f Nhi\u1ec7t \u0111\u1ed9 hi\u1ec7n t\u1ea1i: {{ states('sensor.smart_home_esp8266_temperature') }} \u00b0C \n\ud83d\udca7 \u0110\u1ed9 \u1ea9m hi\u1ec7n t\u1ea1i: {{ states('sensor.smart_home_esp8266_humidity') }} % \n\ud83d\udd52 Th\u1eddi gian ph\u00e1t hi\u1ec7n: {{ now().strftime('%H:%M:%S ng\u00e0y %d/%m/%Y') }} \n--------------------------------------------------  \nH\u1ec7 th\u1ed1ng t\u1ef1 \u0111\u1ed9ng \u0111\u00e3 th\u1ef1c hi\u1ec7n c\u00e1c h\u00e0nh \u0111\u1ed9ng sau: 1. K\u00edch ho\u1ea1t c\u00f2i b\u00e1o \u0111\u1ed9ng (Buzzer). 2. Camera an ninh \u0111\u00e3 ch\u1ee5p \u1ea3nh hi\u1ec7n tr\u01b0\u1eddng.  Vui l\u00f2ng ki\u1ec3m tra ngay l\u1eadp t\u1ee9c \u0111\u1ec3 \u0111\u1ea3m b\u1ea3o an to\u00e0n!",
+                  "title": "C\u1ea2NH B\u00c1O: Ph\u00e1t hi\u1ec7n nguy c\u01a1 CH\u00c1Y N\u1ed4 t\u1ea1i nh\u00e0"
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01KE63E7AEPYP0DTJDCXWNJ3KG",
+            "parent_id": "01KE63E5BVE2D7BA113C5A48M8",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/1",
+          "run_id": "531ba329169766fa738387cc68dc85fe",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2026-01-05T03:33:00.878283+00:00",
+            "finish": "2026-01-05T03:33:04.918584+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1767028620670",
+          "trigger": "numeric state of sensor.smart_home_esp8266_humidity"
+        }
+      }
+    ]
+  }
 }

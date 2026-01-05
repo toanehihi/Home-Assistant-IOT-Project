@@ -34,7 +34,7 @@ output:
   - platform: gpio
     pin: GPIO4
     id: gpio_flash
-    inverted: True
+    inverted: False
 
 light:
   - platform: binary

@@ -9,7 +9,7 @@
       hours: 0
       minutes: 0
       seconds: 2
-    above: 45
+    above: 30
   - trigger: numeric_state
     entity_id:
     - sensor.smart_home_esp8266_humidity
@@ -78,6 +78,12 @@
   - action: camera.snapshot
     metadata: {}
     data:
+      filename: /media/local/detect_human/lastest_snapshot_detect.jpg
+    target:
+      entity_id: camera.camera_an_ninh_camera_feed
+  - action: camera.snapshot
+    metadata: {}
+    data:
       filename: /media/local/detect_human/snapshot_trom_{{ now().strftime('%Y%m%d-%H%M%S')
         }}.jpg
     target:
@@ -143,11 +149,71 @@
     target:
       entity_id: camera.camera_an_ninh_camera_feed
     data:
+      filename: /media/local/chay/lastest_snapshot_chay.jpg
+  - action: camera.snapshot
+    metadata: {}
+    target:
+      entity_id: camera.camera_an_ninh_camera_feed
+    data:
       filename: /media/local/chay/snapshot_chay_{{ now().strftime('%Y%m%d-%H%M%S')
         }}.jpg
   - delay:
       hours: 0
-      minutes: 3
+      minutes: 0
+      seconds: 3
+      milliseconds: 0
+  - action: notify.mail
+    metadata: {}
+    data:
+      message: "Hệ thống Nhà thông minh Home Assistant thông báo:\n⚠️ PHÁT HIỆN NGUY
+        CƠ CHÁY NỔ!\n--------------------------------------------------\n\U0001F321️
+        Nhiệt độ hiện tại: {{ states('sensor.smart_home_esp8266_temperature') }} °C\n\U0001F4A7
+        Độ ẩm hiện tại: {{ states('sensor.smart_home_esp8266_humidity') }} %\n\U0001F552
+        Thời gian phát hiện: {{ now().strftime('%H:%M:%S ngày %d/%m/%Y') }}\n--------------------------------------------------\nCamera
+        an ninh đã chụp ảnh hiện trường. Vui lòng kiểm tra ngay lập tức!"
+      title: "\U0001F6A8 CẢNH BÁO: PHÁT HIỆN MÔI TRƯỜNG BẤT THƯỜNG"
+      data:
+        images:
+        - /media/local/chay/lastest_snapshot_chay.jpg
+  - delay:
+      hours: 0
+      minutes: 5
+      seconds: 0
+      milliseconds: 0
+  mode: single
+- id: '1767585672764'
+  alias: Thông báo Mail  khi phát hiện chuyển động
+  description: ''
+  triggers:
+  - type: motion
+    device_id: a169fa3454dca77467c7a1828beb8e50
+    entity_id: a2dd3c8fef6893695289092c5d1c44c9
+    domain: binary_sensor
+    trigger: device
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 2
+  conditions: []
+  actions:
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 3
+      milliseconds: 0
+  - action: notify.mail
+    metadata: {}
+    data:
+      title: "\U0001F6A8 BÁO ĐỘNG: CÓ NGƯỜI ĐỘT NHẬP!"
+      message: "Hệ thống phát hiện chuyển động bất thường!\n--------------------------------------------------\n\U0001F552Thời
+        gian: {{ now().strftime('%H:%M:%S ngày %d/%m/%Y') }}\n--------------------------------------------------\nĐã
+        phát hiện chuyển động. Vui lòng kiểm tra ngay."
+      data:
+        images:
+        - /media/local/detect_human/lastest_snapshot_detect.jpg
+  - delay:
+      hours: 0
+      minutes: 5
       seconds: 0
       milliseconds: 0
   mode: single

@@ -21,7 +21,7 @@ notify:
     port: 587
     sender: "hocongtoan987@gmail.com"
     recipient:
-      - toanehihi.dev@gmail.com
+      - n22dccn042@student.ptithcm.edu.vn
     starttls: true
-    username: 
-    password: 
+    username: hocongtoan987@gmail.com
+    password: xuti imkl kqwy qxqq

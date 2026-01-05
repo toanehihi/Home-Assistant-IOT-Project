@@ -1,20 +1,19 @@
-2026-01-04 21:21:17.696 ERROR (MainThread) [homeassistant.components.mqtt.client] Failed to connect to MQTT server due to exception: timed out
-2026-01-04 21:21:33.486 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for camera-an-ninh @ 192.168.20.41: Error connecting to [AddrInfo(family=<AddressFamily.AF_INET: 2>, type=<SocketKind.SOCK_STREAM: 1>, proto=6, sockaddr=IPv4Sockaddr(address='192.168.20.41', port=6053))]: [Errno 111] Connect call failed ('192.168.20.41', 6053) (SocketAPIError)
-2026-01-04 21:21:37.153 WARNING (Thread-3 (_do_shutdown)) [homeassistant.util.executor] Thread[SyncWorker_4] is still running at shutdown: File "/usr/local/lib/python3.13/threading.py", line 1014, in _bootstrap
-    self._bootstrap_inner()
-  File "/usr/local/lib/python3.13/threading.py", line 1043, in _bootstrap_inner
-    self.run()
-  File "/usr/local/lib/python3.13/threading.py", line 994, in run
-    self._target(*self._args, **self._kwargs)
-  File "/usr/local/lib/python3.13/concurrent/futures/thread.py", line 93, in _worker
-    work_item.run()
-  File "/usr/local/lib/python3.13/concurrent/futures/thread.py", line 59, in run
-    result = self.fn(*self.args, **self.kwargs)
-  File "/usr/local/lib/python3.13/site-packages/paho/mqtt/client.py", line 1598, in reconnect
-    self._sock = self._create_socket()
-  File "/usr/local/lib/python3.13/site-packages/paho/mqtt/client.py", line 4609, in _create_socket
-    sock = self._create_socket_connection()
-  File "/usr/local/lib/python3.13/site-packages/paho/mqtt/client.py", line 4640, in _create_socket_connection
-    return socket.create_connection(addr, timeout=self._connect_timeout, source_address=source)
-  File "/usr/local/lib/python3.13/socket.py", line 849, in create_connection
-    sock.connect(sa)
+2026-01-05 10:33:54.600 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for camera-an-ninh @ 192.168.20.41: Error connecting to [AddrInfo(family=<AddressFamily.AF_INET: 2>, type=<SocketKind.SOCK_STREAM: 1>, proto=6, sockaddr=IPv4Sockaddr(address='192.168.20.41', port=6053))]: [Errno 111] Connect call failed ('192.168.20.41', 6053) (SocketAPIError)
+2026-01-05 10:39:44.238 WARNING (MainThread) [homeassistant.components.automation.camera_an_ninh] Chụp ảnh khi phát hiện chuyển động: Already running
+2026-01-05 10:39:49.674 WARNING (MainThread) [homeassistant.components.automation.camera_an_ninh] Chụp ảnh khi phát hiện chuyển động: Already running
+2026-01-05 10:42:01.968 WARNING (MainThread) [homeassistant.components.automation.camera_an_ninh] Chụp ảnh khi phát hiện chuyển động: Already running
+2026-01-05 10:43:21.547 WARNING (MainThread) [homeassistant.components.automation.camera_an_ninh] Chụp ảnh khi phát hiện chuyển động: Already running
+2026-01-05 10:46:02.526 WARNING (MainThread) [homeassistant.components.automation.bao_chay_khi_nhiet_do_30_trong_30s] Bật báo động khi NĐ/ĐA vượt ngưỡng: Already running
+2026-01-05 10:46:02.526 WARNING (MainThread) [homeassistant.components.automation.chup_anh_khi_coi_keu] Chụp ảnh khi có tín hiệu cháy: Already running
+2026-01-05 11:04:11.962 WARNING (SyncWorker_3) [homeassistant.components.smtp.notify] Attachment /config/www/snapshot_bao_chay_moi_nhat.jpg not found. Skipping
+2026-01-05 11:06:45.270 WARNING (MainThread) [homeassistant.components.automation.chup_anh_khi_coi_keu] Chụp ảnh khi có tín hiệu cháy: Already running
+2026-01-05 11:06:45.287 WARNING (SyncWorker_1) [homeassistant.components.smtp.notify] Attachment /media/local/chay/snapshot_latest_chay.jpg not found. Skipping
+2026-01-05 11:08:08.624 ERROR (MainThread) [homeassistant.components.automation.camera_an_ninh] Chụp ảnh khi phát hiện chuyển động: Error executing script. Invalid data for call_service at pos 1: must contain at least one of entity_id, device_id, area_id, floor_id, label_id.
+2026-01-05 11:08:08.624 ERROR (MainThread) [homeassistant.components.automation.camera_an_ninh] Error while executing automation automation.camera_an_ninh: must contain at least one of entity_id, device_id, area_id, floor_id, label_id.
+2026-01-05 11:08:08.629 WARNING (SyncWorker_1) [homeassistant.components.smtp.notify] Attachment /config/www/snapshot_bao_chay_moi_nhat.jpg not found. Skipping
+2026-01-05 11:09:19.176 WARNING (MainThread) [homeassistant.components.automation.chup_anh_khi_coi_keu] Chụp ảnh khi có tín hiệu cháy: Already running
+2026-01-05 11:09:22.194 WARNING (SyncWorker_1) [homeassistant.components.smtp.notify] Attachment /media/local/chay/latest_snapshot_chay.jpg not found. Skipping
+2026-01-05 11:12:24.951 ERROR (MainThread) [homeassistant.components.automation.camera_an_ninh] Chụp ảnh khi phát hiện chuyển động: Error executing script. Invalid data for call_service at pos 1: must contain at least one of entity_id, device_id, area_id, floor_id, label_id.
+2026-01-05 11:12:24.951 ERROR (MainThread) [homeassistant.components.automation.camera_an_ninh] Error while executing automation automation.camera_an_ninh: must contain at least one of entity_id, device_id, area_id, floor_id, label_id.
+2026-01-05 11:12:24.952 WARNING (MainThread) [homeassistant.components.automation.thong_bao_mail_khi_phat_hien_chuyen_dong] Thông báo Mail  khi phát hiện chuyển động: Already running
+2026-01-05 11:16:18.347 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for camera-an-ninh @ 192.168.20.41: Error connecting to [AddrInfo(family=<AddressFamily.AF_INET: 2>, type=<SocketKind.SOCK_STREAM: 1>, proto=6, sockaddr=IPv4Sockaddr(address='192.168.20.41', port=6053))]: [Errno 111] Connect call failed ('192.168.20.41', 6053) (SocketAPIError)
