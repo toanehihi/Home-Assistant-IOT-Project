@@ -13,3 +13,15 @@ scene: !include scenes.yaml
 homeassistant:
   allowlist_external_dirs:
     - "/media"
+
+notify:
+  - name: "Mail"
+    platform: smtp
+    server: smtp.gmail.com
+    port: 587
+    sender: "hocongtoan987@gmail.com"
+    recipient:
+      - toanehihi.dev@gmail.com
+    starttls: true
+    username: 
+    password: 
